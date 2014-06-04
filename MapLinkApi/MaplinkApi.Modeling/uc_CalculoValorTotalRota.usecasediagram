@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e30d4905-a20b-4240-99d3-4e0bfb3a1abb" name="UC_CalculoValorTotalRota" linkedPackageId="75dcc01d-92f0-4253-959e-bb0d5e292491" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="2c3fb203-c0a4-4882-9b3f-f4fe736d3cc7">
+      <profileInstance Id="66b475b4-079d-4fda-a108-b512436eb0c9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="75bdfed8-0526-4ba1-9819-7f895320708e">
+      <profileInstance Id="5f5c9568-2cb3-468e-aa78-6119ddf67915" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c8b9d613-eed0-4eec-8653-3941d9aeb751" name="System xpto" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22c3e63b-cc1e-4728-88a8-675357bbef0e" />
+        <targetEnds>
+          <association Id="b903df0c-4ad2-4700-9104-f8bbb050a3a9" isDerived="false" sourceEndRoleName="System xpto" targetEndRoleName="Obter Valor Total da Rota" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="549dfe12-4c9a-4ffc-a094-1b6c68c3cd37" LastKnownName="Calcular valor total da rota por endereco" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c8deb8e-c354-4584-a532-a3c6920effb0" name="System xpto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc761662-344f-47fa-90b4-42cb1ff37b6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e75ada0-effe-4028-924a-4aad89263005" name="Obter Valor Total da Rota" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="21cc529d-6dac-4008-8c6e-5ae7a4f9922b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db68f7c6-61da-45dc-9c74-76f6908967cb" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="549dfe12-4c9a-4ffc-a094-1b6c68c3cd37" name="Calcular valor total da rota por endereco" isAbstract="false" isLeaf="false">
+        <description>Realiza o calculo de valores totais da rota por meio do endereço de origem e destino</description>
+        <elementDefinition Id="9f298821-7e77-41bb-87da-9adccefc1a40" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="75dcc01d-92f0-4253-959e-bb0d5e292491" name="ModelingMapLink">
+    <elementDefinition Id="e49758c7-50b7-49cd-b417-f4a1d4584eaa" />
+  </package>
+</useCaseModelRoot>

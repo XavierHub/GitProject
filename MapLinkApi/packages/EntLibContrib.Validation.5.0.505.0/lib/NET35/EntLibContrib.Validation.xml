@@ -1,0 +1,1221 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntLibContrib.Validation</name>
+    </assembly>
+    <members>
+        <member name="T:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute">
+            <summary>
+            Describes a <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/>.
+            </summary>
+            <remarks>
+            Spin-off of the StringLengthValidatorAttribute class.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.#ctor(System.Int32)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute"/> class with an upper bound constraint.</para>
+            </summary>
+            <param name="upperBound">The upper bound.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.#ctor(System.Int32,System.Int32)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute"/> class with lower and 
+            upper bound constraints.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="upperBound">The upper bound.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.#ctor(System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute"/> class with fully specified
+            bound constraints.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="lowerBoundType">The indication of how to perform the lower bound check.</param>
+            <param name="upperBound">The upper bound.</param>
+            <param name="upperBoundType">The indication of how to perform the upper bound check.</param>
+            <seealso cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType"/>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> described by the configuration object.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>The created <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/>.</returns>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.LowerBound">
+            <summary>
+            Gets the lower bound.
+            </summary>
+            <value>The lower bound.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.LowerBoundType">
+            <summary>
+            Gets the type of the lower bound.
+            </summary>
+            <value>The type of the lower bound.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.UpperBound">
+            <summary>
+            Gets the upper bound.
+            </summary>
+            <value>The upper bound.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CollectionCountValidatorAttribute.UpperBoundType">
+            <summary>
+            Gets the type of the upper bound.
+            </summary>
+            <value>The type of the upper bound.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Configuration.TypeValidatorData">
+            <summary>
+            Configuration object to describe an instance of class <see cref="T:EntLibContrib.Validation.Configuration.TypeValidatorData"/>.
+            </summary>
+            <remarks>
+            Spin-off of the TypeConversionValidatorData class.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.TypeValidatorData.#ctor">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.TypeValidatorData"/> class.</para>
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.TypeValidatorData.#ctor(System.String)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.TypeValidatorData"/> class with a name.</para>
+            </summary>
+            <param name="name">The name for the instance.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.TypeValidatorData.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:EntLibContrib.Validation.Validators.TypeValidator`1"/> described by the configuration object.
+            </summary>
+            <param name="targetType">Not used.</param>
+            <returns>
+            The created <see cref="T:EntLibContrib.Validation.Validators.TypeValidator`1"/>.
+            </returns>
+            <remarks>This operation must be overriden by subclasses.</remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.TypeValidatorData.GetMessageTemplate">
+            <summary>
+            Returns the message template for the represented validator.
+            </summary>
+            <returns></returns>
+            <remarks>
+            Same as ValidatorData::GetMessageTemplate... internal
+            The textual message is given precedence over the resource based mechanism.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.TypeValidatorData.GetMessageTemplateResourceType">
+            <summary>
+            Same as ValidatorData::GetMessageTemplateResourceType... private
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:EntLibContrib.Validation.Configuration.TypeValidatorData.TargetTypeName">
+            <summary>
+            Gets or sets name of the type the represented <see cref="T:EntLibContrib.Validation.Validators.TypeValidator`1"/> must use for testing conversion.
+            </summary>
+            <value>The name of the target type.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Configuration.TypeValidatorData.TargetType">
+            <summary>
+            Gets or sets the target element type.
+            </summary>
+            <value>The type of the target.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.TypeValidator`1">
+            <summary>
+            Validates that a value is of, or inherits, a specific type.
+            </summary>
+            <remarks>
+            A null value is not considered to be of the same type (convention of the 'is' operator).
+            By following that convention we make sure that null won't be valid for value-types such as DateTime.
+            This validator is mainly used for downcasting.
+            </remarks>
+            <typeparam name="T">The target type.</typeparam>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.TypeValidator`1.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.TypeValidator`1.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="messageTemplate">
+            The template to use when logging validation results, 
+            or null we the default message template is to be used.
+            </param>
+            <param name="tag">
+            The tag to set when logging validation results, or null.
+            </param>
+            <param name="negated">
+            Indicates if the validation logic represented by the validator should be negated.
+            </param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.TypeValidator`1.DoValidate(`0,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Implements the validation logic for the receiver.
+            </summary>
+            <param name="objectToValidate">The instance of T to validate.</param>
+            <param name="currentTarget">The object on the behalf of which the validation is performed.</param>
+            <param name="key">The key that identifies the source of objectToValidate.</param>
+            <param name="validationResults">The validation results to which the outcome of the validation should be stored.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.TypeValidator`1.DoValidate(System.Object,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Implements the validation logic for the receiver.
+            </summary>
+            <param name="objectToValidate">The object to validate.</param>
+            <param name="currentTarget">The object on the behalf of which the validation is performed.</param>
+            <param name="key">The key that identifies the source of objectToValidate.</param>
+            <param name="validationResults">The validation results to which the outcome of the validation should be stored.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.TypeValidator`1.GetMessage(System.Object,System.String)">
+            <summary>
+            Gets the message representing a failed validation.
+            </summary>
+            <param name="objectToValidate">The object for which validation was performed.</param>
+            <param name="key">The key representing the value being validated for <paramref name="objectToValidate"/>.</param>
+            <returns>The message representing the validation failure.</returns>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.TypeValidator`1.DefaultNegatedMessageTemplate">
+            <summary>
+            Gets the Default Message Template when the validator is negated.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.TypeValidator`1.DefaultNonNegatedMessageTemplate">
+            <summary>
+            Gets the Default Message Template when the validator is non negated.
+            </summary>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.CompositeRuleSetValidator">
+            <summary>
+            Composite RuleSet Validator
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.#ctor(System.Type,System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CompositeRuleSetValidator"/> class.
+            </summary>
+            <param name="targetType">Type of the target.</param>
+            <param name="targetRuleSets">The target ruleSets.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.#ctor(System.Type,System.String[],Microsoft.Practices.EnterpriseLibrary.Validation.ValidationSpecificationSource,Microsoft.Practices.EnterpriseLibrary.Common.Configuration.IConfigurationSource)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CompositeRuleSetValidator"/> class.
+            </summary>
+            <param name="targetType">Type of the target.</param>
+            <param name="targetRuleSets">The target ruleSets.</param>
+            <param name="source">The source.</param>
+            <param name="configurationSource">The configuration source.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.#ctor(System.Type,System.String[],Microsoft.Practices.EnterpriseLibrary.Validation.ValidationSpecificationSource,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CompositeRuleSetValidator"/> class.
+            </summary>
+            <param name="targetType">Type of the target.</param>
+            <param name="targetRuleSets">The target ruleSets.</param>
+            <param name="source">The source.</param>
+            <param name="configurationSourceName">Name of the configuration source.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.#ctor(System.Type,System.String[],Microsoft.Practices.EnterpriseLibrary.Validation.ValidationSpecificationSource)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CompositeRuleSetValidator"/> class.
+            </summary>
+            <param name="targetType">Type of the target.</param>
+            <param name="targetRuleSets">The target ruleSets.</param>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.GetTargetRuleSets(System.String)">
+            <summary>
+            Gets the target ruleSets.
+            </summary>
+            <param name="targetRuleSets">The target ruleSets.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.DoValidate(System.Object,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Implements the validation logic for the receiver.
+            </summary>
+            <param name="objectToValidate">The object to validate.</param>
+            <param name="currentTarget">The object on the behalf of which the validation is performed.</param>
+            <param name="key">The key that identifies the source of <paramref name="objectToValidate"/>.</param>
+            <param name="validationResults">The validation results to which the outcome of the validation should be stored.</param>
+            <remarks>
+            Subclasses must provide a concrete implementation the validation logic.
+            </remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.DefaultMessageTemplate">
+            <summary>
+            Gets the message template to use when logging results no message is supplied.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CompositeRuleSetValidator.SafeConfigurationSource">
+            <summary>
+            Gets the safe configuration source.
+            </summary>
+            <value>The safe configuration source.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidatorAttribute">
+            <summary>
+            Externally configured Object collection Validator attribute
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidatorAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidatorAttribute"/> class.
+            </summary>
+            <param name="configurationFilePath">The configuration file path.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidatorAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidatorAttribute"/> class.
+            </summary>
+            <param name="ruleSet">The rule set.</param>
+            <param name="configurationFilePath">The configuration file path.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidatorAttribute.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/> described by the attribute object providing validator specific
+            information.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>
+            The created <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/>.
+            </returns>
+            <remarks>This operation must be overriden by subclasses.</remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidatorAttribute.ConfigurationFilePath">
+            <summary>
+            Gets the configuration file path.
+            </summary>
+            <value>The configuration file path.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData">
+            <summary>
+            Externally Configured Object Validator Data
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData"/> class.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData.#ctor(System.String,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData"/> class.
+            </summary>
+            <param name="name">The name of the element.</param>
+            <param name="type">The <see cref="P:Microsoft.Practices.EnterpriseLibrary.Common.Configuration.NameTypeConfigurationElement.Type"/> that this element is the configuration for.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData"/> class.
+            </summary>
+            <param name="name">The name of the element.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/> described by the configuration object.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>
+            The created <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/>.
+            </returns>
+            <remarks>This operation must be overriden by subclasses.</remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData.TargetRuleSet">
+            <summary>
+            Gets or sets the target ruleSet.
+            </summary>
+            <value>The target ruleSet.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectValidatorData.TargetConfigurationFile">
+            <summary>
+            Gets or sets the target configuration file.
+            </summary>
+            <value>The target configuration file.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Configuration.EnumDefinedValidatorData">
+            <summary>
+            Enum Defined Validator Data
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.EnumDefinedValidatorData.#ctor">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.EnumDefinedValidatorData"/> class.</para>
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.EnumDefinedValidatorData.#ctor(System.String)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.EnumDefinedValidatorData"/> class with a name.</para>
+            </summary>
+            <param name="name">The name for the instance.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.EnumDefinedValidatorData.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/> described by the configuration object.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>The created <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/>.</returns>	
+        </member>
+        <member name="T:EntLibContrib.Validation.Configuration.CollectionCountValidatorData">
+            <summary>
+            Configuration object to describe an instance of class <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/>.
+            </summary>
+            <remarks>
+            Spin-off of the StringLengthValidatorData class.
+            </remarks>
+            <seealso cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/>
+            <seealso cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Configuration.ValidatorData"/>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.CollectionCountValidatorData.#ctor">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.CollectionCountValidatorData"/> class.</para>
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.CollectionCountValidatorData.#ctor(System.String)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.CollectionCountValidatorData"/> class with a name.</para>
+            </summary>
+            <param name="name">The name for the instance.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.CollectionCountValidatorData.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> described by the configuration object.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>The created <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/>.</returns>
+        </member>
+        <member name="T:EntLibContrib.Validation.MultipleRuleSetValidator">
+            <summary>
+            Multiple RuleSet Validator
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.MultipleRuleSetValidator.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.MultipleRuleSetValidator"/> class.
+            </summary>
+            <param name="targetConfigurationFile">The target configuration file.</param>
+            <param name="targetRuleSets">The target rule sets.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.MultipleRuleSetValidator.DoValidate(System.Object,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Implements the validation logic for the receiver.
+            </summary>
+            <param name="objectToValidate">The object to validate.</param>
+            <param name="currentTarget">The object on the behalf of which the validation is performed.</param>
+            <param name="key">The key that identifies the source of <paramref name="objectToValidate"/>.</param>
+            <param name="validationResults">The validation results to which the outcome of the validation should be stored.</param>
+            <remarks>
+            Subclasses must provide a concrete implementation the validation logic.
+            </remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.MultipleRuleSetValidator.DefaultMessageTemplate">
+            <summary>
+            Gets the message template to use when logging results no message is supplied.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData">
+            <summary>
+            Composite RuleSet Validator Data
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData"/> class.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData"/> class.
+            </summary>
+            <param name="name">The name of the element.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> described by the configuration object.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>
+            The created <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/>.
+            </returns>
+            <remarks>This operation must be overriden by subclasses.</remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData.TargetRuleSets">
+            <summary>
+            Gets or sets the target ruleSets.
+            </summary>
+            <value>The target ruleSets.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData.Source">
+            <summary>
+            Gets or sets the source.
+            </summary>
+            <value>The source.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Configuration.CompositeRuleSetValidatorData.ConfigurationSourceName">
+            <summary>
+            Gets or sets the name of the configuration source.
+            </summary>
+            <value>The name of the configuration source.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.ObjectValidator`1">
+            <summary>
+            Performs validation on objects by applying the 
+            validation rules specified for the given type-parameter.
+            </summary>
+            <remarks>
+            Same as <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.ObjectValidator"/>, but no need of typeof.
+            </remarks>
+            <typeparam name="T">The target type.</typeparam>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.ObjectValidator`1.#ctor">
+            <summary>
+            Initializes a new instance <see cref="T:EntLibContrib.Validation.Validators.ObjectValidator`1"/>.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.ObjectValidator`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance <see cref="T:EntLibContrib.Validation.Validators.ObjectValidator`1"/> using the supplied ruleSet.
+            </summary>
+            <param name="targetRuleSet">The ruleSet to use.</param>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.CompositeRuleSetValidatorAttribute">
+            <summary>
+            Composite RuleSet Validator attribute
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CompositeRuleSetValidatorAttribute.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/> described by the attribute object providing validator specific
+            information.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>
+            The created <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/>.
+            </returns>
+            <remarks>This operation must be overriden by subclasses.</remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CompositeRuleSetValidatorAttribute.TargetRuleSets">
+            <summary>
+            Gets or sets the target ruleSets.
+            </summary>
+            <value>The target ruleSets.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CompositeRuleSetValidatorAttribute.Source">
+            <summary>
+            Gets or sets the source.
+            </summary>
+            <value>The source.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CompositeRuleSetValidatorAttribute.ConfigurationSourceName">
+            <summary>
+            Gets or sets the name of the configuration source.
+            </summary>
+            <value>The name of the configuration source.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.ArgumentValidationException">
+            <summary>
+            The exception that is thrown when the value of one 
+            of the arguments provided to a method is not valid.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.ArgumentValidationException.parameter">
+            <summary>
+            The parameter that causes this exception.
+            </summary>
+            <remarks>
+            Not serialized accross application domains.
+            </remarks>
+        </member>
+        <member name="F:EntLibContrib.Validation.ArgumentValidationException.parameterString">
+            <summary>
+            The string value of the parameter that causes this exception.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.ArgumentValidationException.validationResults">
+            <summary>
+            The validation results of the parameter that causes this exception.
+            </summary>
+            <remarks>
+            Not serialized accross application domains.
+            </remarks>
+        </member>
+        <member name="F:EntLibContrib.Validation.ArgumentValidationException.validationMessages">
+            <summary>
+            The validation messages of the parameter that causes this exception.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.ArgumentValidationException.isSafe">
+            <summary>
+            Indicates if the exception is safe; that is, if it 
+            contains the parameter value (unsafe) or not (safe).
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.#ctor">
+            <summary>
+            Standard default constructor.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.#ctor(System.String)">
+            <summary>
+            Standard constructor.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.#ctor(System.String,System.Exception)">
+             <summary>
+             Standard constructor.
+             </summary>
+             <param name="message">The error message that explains the reason for the exception.</param>
+             <param name="innerException">
+             The exception that is the cause of the current exception. If the innerException
+             parameter is not a null reference, the current exception is raised in a catch
+             block that handles the inner exception.
+            </param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Standard constructor.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.#ctor(System.String,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            This constructor creates a layer-safe exception that doesn't 
+            propagate the parameter value and validation results data.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="parameterName">The name of the parameter that causes this exception.</param>
+            <param name="validationResults">The validation results of the parameter that causes this exception.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.#ctor(System.String,System.String,System.Object,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            This constructor creates a layer-unsafe exception that
+            propagates the parameter value and validation results data.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="parameterName">The name of the parameter that causes this exception.</param>
+            <param name="parameter">The parameter that causes this exception.</param>
+            <param name="validationResults">The validation results of the parameter that causes this exception.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo"/> object with
+            the parameter name and additional exception information.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+            <exception cref="T:System.ArgumentNullException">
+            The <paramref name="info"/> object is a null reference (Nothing in Visual Basic).
+            </exception>
+            <PermissionSet>
+            	<IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Read="*AllFiles*" PathDiscovery="*AllFiles*"/>
+            </PermissionSet>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidationException.InitValidationMessages(Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Initializes the validation messages from the validation results.
+            </summary>
+            <param name="parameterValidationResults">The validation results of the parameter that causes this exception.</param>
+        </member>
+        <member name="P:EntLibContrib.Validation.ArgumentValidationException.Parameter">
+            <summary>
+            The parameter that causes this exception.
+            </summary>
+            <remarks>
+            Can be null.
+            Not serialized.
+            </remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.ArgumentValidationException.ParameterString">
+            <summary>
+            The string value of the parameter that causes this exception.
+            </summary>
+            <remarks>
+            Can be null.
+            </remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.ArgumentValidationException.ValidationResults">
+            <summary>
+            The validation results of the parameter that causes this exception.
+            </summary>
+            <remarks>
+            Can be null.
+            Not serialized.
+            </remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.ArgumentValidationException.ValidationMessages">
+            <summary>
+            The validation messages of the parameter that causes this exception.
+            </summary>
+            <remarks>
+            Can be null.
+            </remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.ArgumentValidationException.IsSafe">
+            <summary>
+            Gets a value which indicates if the exception is safe; that is, 
+            if it contains the parameter value (unsafe) or not (safe).
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.ArgumentValidationException.Message">
+            <summary>
+            Gets the error message, including the parameter 
+            name and the validation messages, if available.
+            </summary>
+            <remarks>
+            Can't be null.
+            </remarks>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.TypeValidatorAttribute">
+            <summary>
+            Describes a <see cref="T:EntLibContrib.Validation.Validators.TypeValidator`1"/>.
+            </summary>
+            <seealso cref="T:EntLibContrib.Validation.Validators.TypeValidator`1"/>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.TypeValidatorAttribute.overrideTargetType">
+            <summary>
+            The target type to use instead of the one passed by DoCreateValidator.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.TypeValidatorAttribute.#ctor(System.Type)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.TypeValidatorAttribute"/> </para>
+            </summary>
+            <param name="targetType">The target type.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.TypeValidatorAttribute.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/> described by the attribute object providing validator specific
+            information.
+            </summary>
+            <param name="targetType">Not used.</param>
+            <returns>The created <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/>.</returns>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.TypeValidatorAttribute.TargetType">
+            <summary>
+            The target type to use instead of the one passed by DoCreateValidator.
+            </summary>
+            <value>The type of the target.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.EnumDefinedValidator">
+            <summary>
+            Enum Defined Validator
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.EnumDefinedValidator.#ctor">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/>.</para>
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.EnumDefinedValidator.#ctor(System.Boolean)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/>.</para>
+            </summary>
+            <param name="negated">True if the validator must negate the result of the validation.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.EnumDefinedValidator.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/>.
+            </summary>
+            <param name="messageTemplate">The message template to use when logging results.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.EnumDefinedValidator.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/>.
+            </summary>
+            <param name="messageTemplate">The message template to use when logging results.</param>
+            <param name="negated">True if the validator must negate the result of the validation.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.EnumDefinedValidator.DoValidate(System.Object,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Implements the validation logic for the receiver.
+            </summary>
+            <param name="objectToValidate">The object to validate.</param>
+            <param name="currentTarget">The object on the behalf of which the validation is performed.</param>
+            <param name="key">The key that identifies the source of <paramref name="objectToValidate"/>.</param>
+            <param name="validationResults">The validation results to which the outcome of the validation should be stored.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.EnumDefinedValidator.GetMessage(System.Object,System.String)">
+            <summary>
+            Gets the message representing a failed validation.
+            </summary>
+            <param name="objectToValidate">The object for which validation was performed.</param>
+            <param name="key">The key representing the value being validated for <paramref name="objectToValidate"/>.</param>
+            <returns>The message representing the validation failure.</returns>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.EnumDefinedValidator.DefaultNonNegatedMessageTemplate">
+            <summary>
+            Gets the Default Message Template when the validator is non negated.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.EnumDefinedValidator.DefaultNegatedMessageTemplate">
+            <summary>
+            Gets the Default Message Template when the validator is negated.
+            </summary>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.EnumDefinedValidatorAttribute">
+            <summary>
+            Enum Defined Validator attribute
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.EnumDefinedValidatorAttribute.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/> described by the attribute object.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <remarks>This operation must be overriden by subclasses.</remarks>
+            <returns>The created <see cref="T:EntLibContrib.Validation.Validators.EnumDefinedValidator"/>.</returns>
+        </member>
+        <member name="T:EntLibContrib.Validation.ExternallyConfiguredObjectValidator">
+            <summary>
+            Externally configured Object Validator
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectValidator.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.ExternallyConfiguredObjectValidator"/> class.
+            </summary>
+            <param name="ruleSet">The rule set.</param>
+            <param name="configurationFilePath">The configuration file path.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectValidator.DoValidate(System.Object,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Implements the validation logic for the receiver.
+            </summary>
+            <param name="objectToValidate">The object to validate.</param>
+            <param name="currentTarget">The object on the behalf of which the validation is performed.</param>
+            <param name="key">The key that identifies the source of <paramref name="objectToValidate"/>.</param>
+            <param name="validationResults">The validation results to which the outcome of the validation should be stored.</param>
+            <remarks>
+            Subclasses must provide a concrete implementation the validation logic.
+            </remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.ExternallyConfiguredObjectValidator.DefaultMessageTemplate">
+            <summary>
+            Gets the message template to use when logging results no message is supplied.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.ArgumentValidationDefaultMessage">
+            <summary>
+              Looks up a localized string similar to The parameter is invalid..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.ArgumentValidationExceptionParameterValue">
+            <summary>
+              Looks up a localized string similar to Parameter string value: {0}.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.CollectionCountValidatorNegatedDefaultMessageTemplate">
+            <summary>
+              Looks up a localized string similar to The count of items in the collection must not fall within the range &quot;{3}&quot; ({4}) - &quot;{5}&quot; ({6})..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.CollectionCountValidatorNonNegatedDefaultMessageTemplate">
+            <summary>
+              Looks up a localized string similar to The count of items in the collection must fall within the range &quot;{3}&quot; ({4}) - &quot;{5}&quot; ({6})..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.EnumDefinedNegatedDefaultMessageTemplate">
+            <summary>
+              Looks up a localized string similar to The value must not be defined in the &quot;{3}&quot; enum type..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.EnumDefinedNonNegatedDefaultMessageTemplate">
+            <summary>
+              Looks up a localized string similar to The value must be defined in the &quot;{3}&quot; enum type..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.ExternalConfigurationFileNotFound">
+            <summary>
+              Looks up a localized string similar to The external configuration specified cannot be found..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.TypeValidatorNegatedDefaultMessageTemplate">
+            <summary>
+              Looks up a localized string similar to The object of type &quot;{3}&quot; is not expected to be of type &quot;{4}&quot;..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.TypeValidatorNonNegatedDefaultMessageTemplate">
+            <summary>
+              Looks up a localized string similar to The object of type &quot;{3}&quot; is expected to be of type &quot;{4}&quot;..
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Properties.Resources.ValidationErrorIncompatibleType">
+            <summary>
+              Looks up a localized string similar to The supplied object is not compatible with the expected type..
+            </summary>
+        </member>
+        <member name="T:EntLibContrib.Validation.ExternallyConfiguredObjectValidatorAttribute">
+            <summary>
+            Externally configured Object Validator attribute
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectValidatorAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.ExternallyConfiguredObjectValidatorAttribute"/> class.
+            </summary>
+            <param name="configurationFilePath">The configuration file path.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectValidatorAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.ExternallyConfiguredObjectValidatorAttribute"/> class.
+            </summary>
+            <param name="ruleSet">The rule set.</param>
+            <param name="configurationFilePath">The configuration file path.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectValidatorAttribute.DoCreateValidator(System.Type)">
+            <summary>
+            Creates the <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/> described by the attribute object providing validator specific
+            information.
+            </summary>
+            <param name="targetType">The type of object that will be validated by the validator.</param>
+            <returns>
+            The created <see cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validator"/>.
+            </returns>
+            <remarks>This operation must be overriden by subclasses.</remarks>
+        </member>
+        <member name="P:EntLibContrib.Validation.ExternallyConfiguredObjectValidatorAttribute.ConfigurationFilePath">
+            <summary>
+            Gets the configuration file path.
+            </summary>
+            <value>The configuration file path.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.StronglyTypedValidators`1">
+            <summary>
+            Provides pre-allocated, thread-safe validators that are type-dependent.
+            </summary>
+            <typeparam name="T">The target type.</typeparam>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.StronglyTypedValidators`1.notNullTypeValidator">
+            <summary>
+            Validates that objects references are not null and that the objects are of the type-parameter type, using the default ruleSet.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.StronglyTypedValidators`1.notNullObjectValidator">
+            <summary>
+            Validates that objects references are not null and that the objects are valid by themselves, using the default ruleSet.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.StronglyTypedValidators`1.NotNullTypeValidator">
+            <summary>
+            Validates that objects references are not null and that the objects are of the type-parameter type, using the default ruleSet.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.StronglyTypedValidators`1.NotNullObjectValidator">
+            <summary>
+            Validates that objects references are not null and that the objects are valid by themselves, using the default ruleSet.
+            </summary>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.CollectionCountValidator">
+            <summary>
+            Performs validation on collections by comparing their counts to the specified boundaries. 
+            </summary>
+            <remarks>
+            <see langword="null"/> is logged as a failure.
+            Spin-off of the StringLengthValidator class.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with an upper bound constraint.</para>
+            </summary>
+            <param name="upperBound">The upper bound.</param>
+            <remarks>
+            No lower bound constraints will be checked by this instance, and the upper bound check will be <see cref="F:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType.Inclusive"/>.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with an upper bound constraint.</para>
+            </summary>
+            <param name="upperBound">The upper bound.</param>
+            <param name="negated">True if the validator must negate the result of the validation.</param>
+            <remarks>
+            No lower bound constraints will be checked by this instance, and the upper bound check will be <see cref="F:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType.Inclusive"/>.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32,System.Int32)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with lower and 
+            upper bound constraints.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="upperBound">The upper bound.</param>
+            <remarks>
+            Both bound checks will be <see cref="F:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType.Inclusive"/>.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with lower and 
+            upper bound constraints.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="upperBound">The upper bound.</param>
+            <param name="negated">True if the validator must negate the result of the validation.</param>
+            <remarks>
+            Both bound checks will be <see cref="F:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType.Inclusive"/>.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with fully specified
+            bound constraints.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="lowerBoundType">The indication of how to perform the lower bound check.</param>
+            <param name="upperBound">The upper bound.</param>
+            <param name="upperBoundType">The indication of how to perform the upper bound check.</param>
+            <seealso cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType"/>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.Boolean)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with fully specified
+            bound constraints.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="lowerBoundType">The indication of how to perform the lower bound check.</param>
+            <param name="upperBound">The upper bound.</param>
+            <param name="upperBoundType">The indication of how to perform the upper bound check.</param>
+            <param name="negated">True if the validator must negate the result of the validation.</param>
+            <seealso cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType"/>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.String)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with fully specified
+            bound constraints and a message template.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="lowerBoundType">The indication of how to perform the lower bound check.</param>
+            <param name="upperBound">The upper bound.</param>
+            <param name="upperBoundType">The indication of how to perform the upper bound check.</param>
+            <param name="messageTemplate">The message template to use when logging results.</param>
+            <seealso cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType"/>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.#ctor(System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.Int32,Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType,System.String,System.Boolean)">
+            <summary>
+            <para>Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Validators.CollectionCountValidator"/> class with fully specified
+            bound constraints and a message template.</para>
+            </summary>
+            <param name="lowerBound">The lower bound.</param>
+            <param name="lowerBoundType">The indication of how to perform the lower bound check.</param>
+            <param name="upperBound">The upper bound.</param>
+            <param name="upperBoundType">The indication of how to perform the upper bound check.</param>
+            <param name="messageTemplate">The message template to use when logging results.</param>
+            <param name="negated">True if the validator must negate the result of the validation.</param>
+            <seealso cref="T:Microsoft.Practices.EnterpriseLibrary.Validation.Validators.RangeBoundaryType"/>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.DoValidate(System.Collections.ICollection,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Validates by comparing the length for <paramref name="objectToValidate"/> with the constraints
+            specified for the validator.
+            </summary>
+            <param name="objectToValidate">The object to validate.</param>
+            <param name="currentTarget">The object on the behalf of which the validation is performed.</param>
+            <param name="key">The key that identifies the source of <paramref name="objectToValidate"/>.</param>
+            <param name="validationResults">The validation results to which the outcome of the validation should be stored.</param>
+            <remarks>
+            <see langword="null"/> is considered a failed validation.
+            </remarks>
+        </member>
+        <member name="M:EntLibContrib.Validation.Validators.CollectionCountValidator.GetMessage(System.Object,System.String)">
+            <summary>
+            Gets the message representing a failed validation.
+            </summary>
+            <param name="objectToValidate">The object for which validation was performed.</param>
+            <param name="key">The key representing the value being validated for <paramref name="objectToValidate"/>.</param>
+            <returns>The message representing the validation failure.</returns>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CollectionCountValidator.DefaultNonNegatedMessageTemplate">
+            <summary>
+            Gets the Default Message Template when the validator is non negated.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.CollectionCountValidator.DefaultNegatedMessageTemplate">
+            <summary>
+            Gets the Default Message Template when the validator is negated.
+            </summary>
+        </member>
+        <member name="T:EntLibContrib.Validation.ArgumentValidation">
+            <summary>
+            Represents an argument validation class to 
+            test method pre-conditions and post-conditions.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidation.Validate(System.String,System.Object,Microsoft.Practices.EnterpriseLibrary.Validation.Validator[])">
+            <summary>
+            Validates an argument using the provided validators and throws
+            an <see cref="T:EntLibContrib.Validation.ArgumentValidationException"/> containing the parameter value if the validation fails.
+            </summary>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="validators">The validators to use to test the argument.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidation.Validate(System.String,System.Object,System.Boolean,Microsoft.Practices.EnterpriseLibrary.Validation.Validator[])">
+            <summary>
+            Validates an argument using the provided validators and throws
+            an <see cref="T:EntLibContrib.Validation.ArgumentValidationException"/> optionally containing the parameter value if the validation fails.
+            </summary>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="safeException">True if the parameter value shouldn't be attached to the exception, false otherwise.</param>
+            <param name="validators">The validators to use to test the argument.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidation.Validate(System.String,System.String,System.Object,System.Boolean,Microsoft.Practices.EnterpriseLibrary.Validation.Validator[])">
+            <summary>
+            Validates an argument using the provided validators and throws
+            an <see cref="T:EntLibContrib.Validation.ArgumentValidationException"/> optionally containing the parameter value if the validation fails.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="parameterName">Name of the parameter.</param>
+            <param name="parameter">The parameter.</param>
+            <param name="safeException">True if the parameter value shouldn't be attached to the exception, false otherwise.</param>
+            <param name="validators">The validators to use to test the argument.</param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ArgumentValidation.InnerValidate(System.String,System.String,System.Object,System.Boolean,Microsoft.Practices.EnterpriseLibrary.Validation.Validator[])">
+            <summary>
+            Contains the validation process logic.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="paramName">The name of the argument.</param>
+            <param name="param">The argument.</param>
+            <param name="safeException">True if the parameter value shouldn't be attached to the exception, false otherwise.</param>
+            <param name="validators">The validators to use to test the argument.</param>
+        </member>
+        <member name="T:EntLibContrib.Validation.Validators.DefaultValidators">
+            <summary>
+            Provides pre-allocated, thread-safe validators.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.DefaultValidators.notNullValidator">
+            <summary>
+            Validates that objects references are not null using, the default ruleSet.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.DefaultValidators.nullValidator">
+            <summary>
+            Validates that objects references are null using, the default ruleSet.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.DefaultValidators.stringNotNullNorEmptyValidator">
+            <summary>
+            Validates that strings are neither null nor empty, using the default ruleSet.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.DefaultValidators.collectionNotNullNorEmptyValidator">
+            <summary>
+            Validates that collections are neither null nor empty, using the default ruleSet.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.DefaultValidators.enumDefinedValidator">
+            <summary>
+            Validates that the value is Defined in the enum's values.
+            </summary>
+        </member>
+        <member name="F:EntLibContrib.Validation.Validators.DefaultValidators.enumNotDefinedValidator">
+            <summary>
+            Validates that the value is not Defined in the enum's values.
+            </summary>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.DefaultValidators.NotNullValidator">
+            <summary>
+            Gets the not null validator.
+            </summary>
+            <value>The not null validator.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.DefaultValidators.NullValidator">
+            <summary>
+            Gets the null validator.
+            </summary>
+            <value>The null validator.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.DefaultValidators.StringNotNullNorEmptyValidator">
+            <summary>
+            Gets the string not null nor empty validator.
+            </summary>
+            <value>The string not null nor empty validator.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.DefaultValidators.CollectionNotNullNorEmptyValidator">
+            <summary>
+            Gets the collection not null nor empty validator.
+            </summary>
+            <value>The collection not null nor empty validator.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.DefaultValidators.EnumDefinedValidator">
+            <summary>
+            Gets the enum defined validator.
+            </summary>
+            <value>The enum defined validator.</value>
+        </member>
+        <member name="P:EntLibContrib.Validation.Validators.DefaultValidators.EnumNotDefinedValidator">
+            <summary>
+            Gets the enum not defined validator.
+            </summary>
+            <value>The enum not defined validator.</value>
+        </member>
+        <member name="T:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidator">
+            <summary>
+            Externally configured Object collection Validator
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidator.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidator"/> class.
+            </summary>
+            <param name="ruleSet"></param>
+            <param name="configurationFilePath"></param>
+        </member>
+        <member name="M:EntLibContrib.Validation.ExternallyConfiguredObjectCollectionValidator.DoValidate(System.Object,System.Object,System.String,Microsoft.Practices.EnterpriseLibrary.Validation.ValidationResults)">
+            <summary>
+            Does the validate.
+            </summary>
+            <param name="objectToValidate">The object to validate.</param>
+            <param name="currentTarget">The current target.</param>
+            <param name="key">The key.</param>
+            <param name="validationResults">The validation results.</param>
+        </member>
+        <member name="T:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectCollectionValidatorData">
+            <summary>
+            Externally Configured Object Collection Validator Data
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectCollectionValidatorData.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectCollectionValidatorData"/> class.
+            </summary>
+        </member>
+        <member name="M:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectCollectionValidatorData.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EntLibContrib.Validation.Configuration.ExternallyConfiguredObjectCollectionValidatorData"/> class.
+            </summary>
+            <param name="name">The name of the element.</param>
+        </member>
+    </members>
+</doc>

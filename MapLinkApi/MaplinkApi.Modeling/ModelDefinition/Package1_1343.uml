@@ -1,0 +1,4058 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cb38b730-a8f7-4526-92b4-27896a81c916"
+  name="Model"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d3616ffa-1510-4b9c-b653-3db97c898a8c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMapLinkApi.Model"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="28d060a0-c404-4420-a169-bcadbd619c0d"
+        name="Coordenadas"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="437cb353-c5d8-44dc-adf2-d850edcbc1fd"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCoordenadas"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d7c7506c-91a3-43be-9a32-964f45418097"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e60198b-217d-4446-aef9-970edf335264">
+                <propertyInstance
+                  Id="dddc3bad-8145-4511-9026-e08434b2a223"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="628c8467-f1d7-4292-88df-de173f5810f5">
+                <propertyInstance
+                  Id="77e3ccd2-50ef-4549-bdb1-8fa894c078dc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77847880-0e61-4b3e-950f-ab031ac8fe46">
+                <propertyInstance
+                  Id="287a0d26-b7f4-4b91-bbd5-a87a42c57260"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c72e24b-83ae-441e-98c9-21ceb51301bb">
+                <propertyInstance
+                  Id="cba97bce-8d1d-46a7-8f48-2478565b5d41"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="76318ba1-687f-46bd-8287-0a4740d4cf61">
+                <propertyInstance
+                  Id="9e5bee48-9305-4f60-b2a4-2efdb88f898c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c41d6e96-e3b4-4ec3-bd81-2ee030fd4acb"
+            name="Coordenadas"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c02d5d9c-4716-46d3-a6e1-5dc7fb4a03d2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCoordenadas Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6f122f5a-7754-4990-a977-308b68be8b70"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7da7051-e7fc-48ff-8460-e9899eee98d8">
+                    <propertyInstance
+                      Id="ddf1b8c0-0338-4abc-8859-5176ab5e8bf0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d77cc115-6cba-4aaf-9f6b-373974822a93">
+                    <propertyInstance
+                      Id="9137021a-e791-4b19-a8d0-33a154be1556"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2a3a8d6-e264-4b01-884b-4ba9aa85d7dc">
+                    <propertyInstance
+                      Id="53aee6d2-7ba0-4c42-8f74-e5924683e416"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="304d5968-85bb-4383-a9f7-eb81b2ed1d49">
+                    <propertyInstance
+                      Id="efce721c-c0cb-4797-947a-4693462a3d86"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="233fe25a-628f-4b62-a6b6-12fb9935b711">
+                    <propertyInstance
+                      Id="33b5bc67-42f3-4e5e-a8b3-751a99e3df27"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4862885d-8b96-49ea-9e7e-ab68b2090709">
+                    <propertyInstance
+                      Id="462a6cee-3c55-4bad-ae34-e88bfae149a7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c630f251-f93c-4254-a01b-5c33ca6594d1"
+        name="Endereco"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7a674342-d5bd-41a7-99dc-fd6f42bba4e8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DEndereco"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="919310c6-b758-4481-a4f4-9184731073e2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f70e781d-024f-4ca5-9671-e7abbcd7ce43">
+                <propertyInstance
+                  Id="335185b9-58a3-49d7-b9d6-8acd11a6a5f8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3257e64-7385-438a-9dfc-8eef881ee6d0">
+                <propertyInstance
+                  Id="e99fc1fb-0581-407c-9db8-214644c2a70c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ee6b168-217d-4fae-adab-31b1e5e1441d">
+                <propertyInstance
+                  Id="398096af-398b-4443-b9ea-2a89f2a0f9b0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9a686dc-246a-4aab-a4a9-ad297f356736">
+                <propertyInstance
+                  Id="6825e493-8ba7-45c0-80e0-4f2560cf0c5a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="552e7807-5d5b-4a17-811c-cf44f9fe60bf">
+                <propertyInstance
+                  Id="202b13e9-4a65-4ef9-a7ba-2a132836d2ff"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="f2ada97f-0a92-417e-b931-f8dbc85bf9b9"
+            isDerived="false"
+            sourceEndRoleName="Endereco"
+            targetEndRoleName="Coordenadas"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="28d060a0-c404-4420-a169-bcadbd619c0d"
+              LastKnownName="Coordenadas"
+              LastKnownLocation="Package1_1343.uml" />
+            <description>Property Coordenadas references type Coordenadas.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae57fadb-d7ac-48ab-bf10-2bd64ca7efea"
+                  name="Endereco"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d8d98b90-f690-4e68-bda0-cebdaaf85020"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="03af28a1-2b40-43b3-9066-af19084e893c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8afaf197-4bec-4c85-bd49-5103e32ef9eb"
+                  name="Coordenadas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="32bb5900-383a-455e-a884-cbeb3f4c4270"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0713ce77-758e-45de-b16a-9de09b775dd5"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1976466c-27cc-4e2a-a954-048828f7ec7b"
+            name="Coordenadas"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="530a31a3-cfc0-4db8-a6d7-34f0011bf4a3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DEndereco Member%3DCoordenadas"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="adeddd2f-6d11-4922-bbae-bf462986d705"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f7a31e2-77b9-43b1-a7f9-1e6bbf5b09a1">
+                    <propertyInstance
+                      Id="641ae8d1-de09-4e5a-859f-27c50fa5fbfc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2e41e5a-c55a-4920-bd5e-9abc4840b1b1">
+                    <propertyInstance
+                      Id="2b6654fd-fb06-4533-8a72-d3e6e81969f4"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23962f07-3483-4491-a16a-ac63035371e3">
+                    <propertyInstance
+                      Id="d7ebdb4e-3da7-4c5e-992b-53a3187d21a6"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ed388f8-0ffa-4b61-9439-2db9e55013d4">
+                    <propertyInstance
+                      Id="035cd7dc-11d5-4d17-834f-c3644c9cd68e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16c3454d-d1a8-446b-b1df-2d92d8424ac9">
+                    <propertyInstance
+                      Id="d06a286a-0127-4ec6-9ed2-9fcedda74c9f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c3c6cdb-8783-476d-ad77-fdac138a156d">
+                    <propertyInstance
+                      Id="16787578-00f8-435b-98a2-d7746ae3a8ef"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbf59274-487d-4da4-a0bd-1ac7d0d2d717">
+                    <propertyInstance
+                      Id="040dcab4-2759-4673-8b6a-09d574b7db58"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="28d060a0-c404-4420-a169-bcadbd619c0d"
+                LastKnownName="Coordenadas"
+                LastKnownLocation="Package1_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e4cc3d71-f303-473a-a78f-f29128343909"
+            name="Nome"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fcf1a02b-dd96-42d6-be49-453f4be56b84"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DEndereco Member%3DNome"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="135325af-ef0d-455a-b79c-76b0f126847a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7843b0ad-c5e4-4a4d-8f44-6b241572564c">
+                    <propertyInstance
+                      Id="5da007af-20f1-4a70-aba3-731af8f0459b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cb57143-a348-4e7f-a3a4-9df7f425308f">
+                    <propertyInstance
+                      Id="1e8fcc31-32ff-4d7c-b3fd-d90c03074b5f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c047c486-e6e4-4979-a304-966d1cbcdfb0">
+                    <propertyInstance
+                      Id="6d872925-f5e5-4cbe-a082-1ac31ca67d8a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b91fa118-bcc4-4531-bf2b-0cc67765e947">
+                    <propertyInstance
+                      Id="ced669a6-5a26-4a33-a4e2-5b09aee1e46d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c0d665d-e86e-4abe-a3ee-a8bc3cb89e73">
+                    <propertyInstance
+                      Id="20383b04-6af5-48dd-9dd1-a316eb4505f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8049b86-1bd4-4737-b525-8b6559895e7d">
+                    <propertyInstance
+                      Id="a0282a1c-2371-4303-b9c7-cb0a1bde2efa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ffb688d-3b8c-46c5-8f9e-bbf7f37d607e">
+                    <propertyInstance
+                      Id="4b56e21c-5f70-489b-8481-d0703ad197ef"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9df562c6-7ea7-4813-a56d-779a1e38bf18"
+            name="Numero"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f42d9901-5a31-4ee0-991c-1fb65a427096"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DEndereco Member%3DNumero"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7feccf7e-8d3d-4685-b88a-d907fb33656b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4a26cc5-ebb8-410f-a96c-99da6ad1aaf1">
+                    <propertyInstance
+                      Id="2f02a6b9-c924-43e8-9107-6054be20bbcf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="723b134c-e854-42f4-bd0c-b1e16c23e229">
+                    <propertyInstance
+                      Id="829ebe3c-5202-4b01-b9e4-2b208e7c1feb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb4c5b2d-9f36-4ba0-a721-ec33d4cc76fb">
+                    <propertyInstance
+                      Id="5ab5819b-942e-4f59-a353-7d4898a161eb"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ca2c850-c0d6-49e6-8156-7d84543a5ceb">
+                    <propertyInstance
+                      Id="06696d26-db29-45e3-bcf3-974418733629"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1dc3325c-6951-46e8-8992-72cf50c642d2">
+                    <propertyInstance
+                      Id="063f9dc3-baf8-41c8-a49e-f5d0a53472a2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fce65ed-e92a-4fe0-8554-66b25da62fcb">
+                    <propertyInstance
+                      Id="dbec0f85-db75-4949-aaf5-f9732277d2f6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fc2967d-f23e-45e0-a583-dbc859322ef4">
+                    <propertyInstance
+                      Id="b07ca9fd-6390-4b30-bb11-a1bbd6105369"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="57acab7a-2999-4ca7-a8a8-205c2aa2b847"
+            name="Cidade"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fa1ab7bd-8d47-4ff9-81b8-29496ffe2c34"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DEndereco Member%3DCidade"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6fd89913-49f2-45b5-a908-d5af557bc63d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45c101a6-696d-49b9-beed-2b07c65765da">
+                    <propertyInstance
+                      Id="83badc72-081f-4d64-9526-87e5befc56d9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="227c0301-6d5e-4cd6-9ba1-ccb72daa516b">
+                    <propertyInstance
+                      Id="2916f69c-87cd-480f-a5a9-d72700a6c6cc"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="673f23af-27fc-4bab-9f6a-480b636ea3f5">
+                    <propertyInstance
+                      Id="30b9dac8-281d-4e10-adc3-7699563bfaf6"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5b91ad7-fc73-4cd1-a3cc-ec56da3e133a">
+                    <propertyInstance
+                      Id="ed45ac92-19d0-4e63-b342-d2db92b6bc67"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f6df26a-9121-4d92-bcdd-6a5b611e92f7">
+                    <propertyInstance
+                      Id="fab9c7e3-8148-4fe8-bac6-aa96b0d724e0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad8b8c6e-aca1-48ef-b3b6-ff6e4ed3a4f1">
+                    <propertyInstance
+                      Id="f37ceae5-3c23-45f0-aca7-dca5e966d7da"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5ac34e2-fc5d-419d-a8f1-320ed0c74a8a">
+                    <propertyInstance
+                      Id="2fce0e85-3b5b-48d5-97be-8e1cf7f2cebe"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="03979f2a-5140-489e-8b52-1dcb613a08b5"
+            name="Estado"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4265baee-0b8d-4deb-a30a-58bd260a8f1e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DEndereco Member%3DEstado"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="25ea4ae7-0fc6-4e29-a0d3-279c57ebbd04"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32314916-ee95-464b-8820-99fd614b88dd">
+                    <propertyInstance
+                      Id="5c741159-b439-4a7b-ba15-21fe32b654da"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a13e770-54d6-473b-850f-82e5f4ed771a">
+                    <propertyInstance
+                      Id="40f5c734-0f6b-459b-bd95-e67de69f9250"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee41443a-df2b-42d2-af29-12614fe3beb5">
+                    <propertyInstance
+                      Id="1efc6d7b-8776-4afa-b6dd-fc4f2c4fba54"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12ad0212-167f-4f89-9cde-42bf3995f6c4">
+                    <propertyInstance
+                      Id="9dbbf15a-0351-47fc-b9ef-ffd5f74a33d9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="772b12ad-5258-4b14-80b7-9790d24019d6">
+                    <propertyInstance
+                      Id="cea30a1b-6e68-4666-abb8-cd172f151d2c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c8ba3a1-207a-436d-9005-89485babdc15">
+                    <propertyInstance
+                      Id="96f6ad75-2028-4929-b137-3d72e410f4ee"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bb4c036-58c3-4ad0-b75b-357b1fa2a97a">
+                    <propertyInstance
+                      Id="02afac7b-a62d-4532-b291-3fc1d7fc3ed2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fb5f6cef-c758-4c02-991c-ffd0ade991dc"
+            name="Endereco"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9813cc82-01b8-4491-bdc6-563441ef6a99"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DEndereco Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d89e0f5d-a538-4ee9-8ec0-8fa5954b8999"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="844db437-c456-40ea-bde2-fdf286bdc408">
+                    <propertyInstance
+                      Id="48a04c0d-e96d-4012-af9b-3998af5bcc9b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edf452f8-8398-43df-b196-3c2187fb349b">
+                    <propertyInstance
+                      Id="34a276b8-092d-4aab-800e-c74aaa9021e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79fad698-725e-40f3-b985-a09779c89ef3">
+                    <propertyInstance
+                      Id="cda8e005-386f-4bf4-ad53-85239aa384b6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f48f902-eee3-4ced-893c-7490def0de9c">
+                    <propertyInstance
+                      Id="f61ef837-6582-42be-b891-02d3b5a329cb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="944eefcf-d6eb-4d0c-be5f-8dd28a529c9c">
+                    <propertyInstance
+                      Id="f4df3bd5-8c25-41c2-a1ec-07f9b5f4f7f2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5dea5206-1484-4bd1-bcc5-99498bafb5f9">
+                    <propertyInstance
+                      Id="b31f506c-338e-43b8-9247-5c20372d4a47"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f8a996b1-f0be-45b4-a159-e9100c43ce27"
+        name="RouteTotal"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2509bb2d-9846-49df-8c50-638120a3c00e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteTotal"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="14927119-2085-49e0-85c3-d1118bc0b9c6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="feb918c6-6b58-4755-847c-e3a0e4dca351">
+                <propertyInstance
+                  Id="b569d892-956f-4228-9c3a-7311d88b3ee3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eefa89e4-c859-4331-8635-ccdfe357ac2f">
+                <propertyInstance
+                  Id="0653542b-e352-4f28-a1ec-50c56a232f1d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a766d83d-25c3-4593-a8dc-0d8f30f9141f">
+                <propertyInstance
+                  Id="c09a6cff-6b21-4cb0-8d3b-0bcb1796ea16"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c09d945d-ea6f-47c2-84dc-b49784a9e2b0">
+                <propertyInstance
+                  Id="7e1ad4bd-7f3c-4d1a-8a51-bc61ecbb45eb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2371bbd-57df-407c-be08-1f24c1a3c2d2">
+                <propertyInstance
+                  Id="d6a874b9-6845-4da4-840f-450a0471dab4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="174ef349-a8c6-4068-bb4a-50683d882758"
+            isDerived="false"
+            sourceEndRoleName="RouteTotal"
+            targetEndRoleName="CustoCombustivel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+              LastKnownName="Double"
+              LastKnownLocation="Package2_1343.uml" />
+            <description>Property CustoCombustivel references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe576b5e-7395-40ea-b1b0-27316dc9e1e8"
+                  name="RouteTotal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="80933569-fb2a-45d2-afe1-8a736d1fe07a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d5d9d488-509b-45b1-b617-4c55d591dcda"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3fcd8638-9e3d-400f-b87c-055eef381a5b"
+                  name="CustoCombustivel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d7264c40-8ab0-41f0-87d1-8771cbe0d74f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="97901ac0-f9cc-44f4-901b-d68fec4f31da"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b0442e0d-6e28-430a-8ea2-9e0f87835433"
+            isDerived="false"
+            sourceEndRoleName="RouteTotal"
+            targetEndRoleName="CustoTotalComPedagio"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+              LastKnownName="Double"
+              LastKnownLocation="Package2_1343.uml" />
+            <description>Property CustoTotalComPedagio references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2268532-97ed-4257-afa2-871676697240"
+                  name="RouteTotal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="04fb8990-0aa1-4f1a-a7ea-b6fbfb3aff11"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9c8cdd4d-a187-4fe1-bddc-3e63a987ae0a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9dc6b325-f871-49ad-98e4-d29343871339"
+                  name="CustoTotalComPedagio"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7366bedc-c06f-45c4-a45c-4a9f39b71499"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f8545e85-e4b0-46ec-a452-28d9ab618e61"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9a500d94-fb34-4ddd-a76e-948fe40d73e6"
+            isDerived="false"
+            sourceEndRoleName="RouteTotal"
+            targetEndRoleName="Distancia"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+              LastKnownName="Double"
+              LastKnownLocation="Package2_1343.uml" />
+            <description>Property Distancia references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c3ad0f59-d2cb-400e-86dc-380e8e901658"
+                  name="RouteTotal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="174276c7-ce1f-4190-8b77-83d1552cbab0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="55ba8257-181c-4993-9d35-1ad5867d045f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b959946-dd3b-4a3b-b72b-87e28a330404"
+                  name="Distancia"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9537d797-de1d-4a3b-b463-7e21ff21241a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="908be59a-e7a5-4002-8925-7dcfe82abcf6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2b2a4586-2878-4b62-a02f-4395a7db2b76"
+            name="Tempo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd553357-376e-43e5-905c-211a4b144947"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteTotal Member%3DTempo"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c310a3d2-3309-4c81-ad98-dd5e280c1d4e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4b779e6-fadd-4a03-a385-0d2cfd0e624a">
+                    <propertyInstance
+                      Id="f620a7e1-07c4-4cc4-9cd6-ebf558553fba"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3894f8fa-2730-4860-ba77-4c52e9f61879">
+                    <propertyInstance
+                      Id="c73b15a3-5d10-4f0f-8269-fdb532af458e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f75223b-316b-4822-aaf0-7ba66fae557a">
+                    <propertyInstance
+                      Id="677de14d-520e-488b-bfb0-7e3b8d9666c1"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c60cebf3-6838-4384-b875-68fe2a311ae8">
+                    <propertyInstance
+                      Id="2fbf5af4-d163-49b5-bffc-f3b8c0f68480"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ef62b7a-7eac-4eec-96e1-e2374180ec77">
+                    <propertyInstance
+                      Id="30715ae3-78f8-4e93-b0ec-cbb91867c0c9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d9ed6a9-fc31-4f20-bdbc-104f7d230d21">
+                    <propertyInstance
+                      Id="e2590a00-1955-4ef2-b84f-1be3f68b117c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4e2da03-0b8d-45a3-96db-bf9915c29aa3">
+                    <propertyInstance
+                      Id="2da7ee3c-1400-4200-b919-252ae76cc50b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5a19dde4-afdd-46c9-80e3-40011f529ea1"
+            name="Distancia"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9c289771-580b-4727-bbc9-b587dd9e604d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteTotal Member%3DDistancia"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bc42dc9d-f1a7-4d4c-8998-a9135f7650c0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c6646ab-c9ed-414b-9658-42b0b2f7057f">
+                    <propertyInstance
+                      Id="ca89a8be-8e4d-42e7-b320-6f3891a28039"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebbae41d-f115-4929-8d13-6e43e55ba24f">
+                    <propertyInstance
+                      Id="299d4bcc-6457-4124-ac90-c0cda2d54f0d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54cbef0c-29b9-46cd-b20d-f2c0b305c798">
+                    <propertyInstance
+                      Id="04f3f29b-8f2c-4298-b397-83def07489bd"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26160dac-aaaf-4178-b580-7fed593e803c">
+                    <propertyInstance
+                      Id="34fa8493-252b-46c0-90a6-bd308bbcb1fa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cb3e0e6-324d-4b45-9c83-45c8b41609b1">
+                    <propertyInstance
+                      Id="096e6bdf-8ac9-413c-b392-e8d68dc081e0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fde578a6-1688-4c05-8ca5-5fc48e1575b9">
+                    <propertyInstance
+                      Id="a748a88c-bb0a-491e-a5d1-f0dbced329b1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75ea28ef-b116-4e7f-95a0-442c0c89769a">
+                    <propertyInstance
+                      Id="9d35f668-bcd3-4ae5-8ad9-ed71798885b0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bbd58360-f38c-4199-9562-79c582e4a9eb"
+            name="CustoCombustivel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="19fea92e-a85a-43ba-bece-d2c8c1d35edc"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteTotal Member%3DCustoCombustivel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="35859174-4b50-41a8-90ca-6f5485f330eb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6db4bdb-c905-4f9a-8892-097f044c5c60">
+                    <propertyInstance
+                      Id="fadbd3ca-2ccb-4fb5-be47-7937504784f0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a0846d5-08c2-48f3-8fbe-620cad7a6536">
+                    <propertyInstance
+                      Id="f8149be4-f389-43da-8afa-bf488c76e2ae"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="828e8ede-f6b7-4412-a64d-0518a237ffe3">
+                    <propertyInstance
+                      Id="0541f7f2-726a-4f91-82dd-d703770c6dee"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77447c1f-0d5e-4fb0-a432-faaea8d1c3ee">
+                    <propertyInstance
+                      Id="2e9ec851-8fd6-4ddb-a277-896c223bb6cc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e7ad811-ad0a-4693-9c88-a29da759ee60">
+                    <propertyInstance
+                      Id="fe58ad24-93d2-4aae-bd17-bcfb86bc2c7c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fb37ed8-42de-4c84-9fc9-0ed1497d64fe">
+                    <propertyInstance
+                      Id="56c98b3a-4ce3-4537-9826-fbe25df90aa7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48066a92-4f04-4661-a34b-dbcc3a26dcca">
+                    <propertyInstance
+                      Id="c98625a4-84ac-40d2-8d74-1a44bd2dc24b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1e1787e1-b4bf-4e01-b85b-f064077ab8ca"
+            name="CustoTotalComPedagio"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="942201fd-cac3-4cc0-9bdb-b9dd18e5d7d3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteTotal Member%3DCustoTotalComPedagio"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d351cb11-7c61-4555-8de6-9d199a62a036"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4d84f8a-dfbe-4f57-bf08-a699f94a62fd">
+                    <propertyInstance
+                      Id="0db3f473-e742-4fbc-9dea-e5bb302c4620"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="281c718d-6b24-405a-a9b0-87789e5f2b84">
+                    <propertyInstance
+                      Id="53fe850e-3c83-4f9f-aec8-d394e36ea515"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05df02f5-deb4-46f2-861b-43825182f5eb">
+                    <propertyInstance
+                      Id="8413c27a-5ae3-4149-b504-1d5ccf5c96df"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3999ba08-995e-406f-a3f8-8ecd96fe55a4">
+                    <propertyInstance
+                      Id="5944d99b-fcb7-434d-90cf-00e35bb3c0b9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0bc0e40-9ab6-48e4-9b18-b80a2105c1d8">
+                    <propertyInstance
+                      Id="cbf916b4-fa38-4597-b567-e150e94d80f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cb749aa-d623-4565-a853-db587c0a2fd5">
+                    <propertyInstance
+                      Id="80544639-e04e-4b99-9254-0fcbec60b431"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="901414cf-3857-416d-9a22-a9f2cc0700ff">
+                    <propertyInstance
+                      Id="7a0717de-0431-4910-9b42-903c57d8e9a7"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1343.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ebf4635f-9aba-4596-ae87-0b8d68beb284"
+            name="RouteTotal"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4c29c34b-df53-461d-804f-9ed0f1c721b5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteTotal Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1e25d5d-16ba-46c7-839f-d8f490b6d406"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="908214ac-f7bd-4e3b-bc1a-6d679227d123">
+                    <propertyInstance
+                      Id="83d032b2-6242-4d68-92ab-23ae07b80b2e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10861d27-ab39-463a-8f22-3c754e68c8e2">
+                    <propertyInstance
+                      Id="4caf53ce-0a2c-45d5-b468-9fcd3d07d3e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8ec8c91-a7db-4004-87d7-a97cbccb008b">
+                    <propertyInstance
+                      Id="263ad250-54eb-4dbf-8b21-632cbbc6241c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1816a477-8bb9-4c40-aea8-0861f829aa52">
+                    <propertyInstance
+                      Id="7bae517e-dfd4-4aca-829a-1dbca89f5fbc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f83a51c-6916-415a-abe6-bb90150cad6c">
+                    <propertyInstance
+                      Id="30cb3aad-1e6a-40f0-aa5b-6118e507f9ab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b1a99d4-31c7-49ab-af97-058abbf3f847">
+                    <propertyInstance
+                      Id="a17cc7a7-451b-4596-8ae8-67c2e7878450"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="82e327b6-d3e1-4e3e-942e-c92c7e931bd8"
+        name="TipoRota"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="2d239eb4-7e15-4757-a208-fff31bc4ae28"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DTipoRota"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ac71be0d-736d-4dd7-b34d-f7b340719544"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d091cbb3-9c3f-492d-ba76-c0dc1a50f3a1">
+                <propertyInstance
+                  Id="c33b0551-b1d1-4d5e-b9b6-7d3ed021f265"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="103a6f28-f212-4894-9dc8-89d1cb09cb18">
+                <propertyInstance
+                  Id="42ff10cc-cc71-47a6-9199-32c317d5768f"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="66a801fe-2b66-4a93-819b-48b0adc5d3d1">
+                <propertyInstance
+                  Id="7e0f26df-c0b1-4559-bb46-97c32b45bf02"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="ce7d06e6-67a4-4f98-8050-e1debc3c3509"
+            name="PadraoMaisRapida">
+            <referencesInternal>
+              <reference
+                Id="b8fd1587-d032-46cb-8260-dae5652a3532"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DTipoRota Member%3DPadraoMaisRapida"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="35f44135-3949-4450-8a9d-6d744121a865"
+            name="Literal1" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6fb4f599-1864-47fc-b548-338ce83b173c"
+        name="Vehicle"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="affae2b9-c3c8-4583-b942-8408ce329002"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DVehicle"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="511fd461-658c-41a2-a329-25d15c466a96"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6b965461-6757-4c9a-9d68-bb949065f048">
+                <propertyInstance
+                  Id="341458b1-ff9c-4877-983b-1c23052d99b4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="23888470-53b6-411c-804c-c9c0c5b57b54">
+                <propertyInstance
+                  Id="9cb62370-9772-4946-bff2-949cc5573232"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e593c113-3ecb-4fb7-974f-b625221d74ae">
+                <propertyInstance
+                  Id="69c632f4-ceb9-470a-be8f-c4bf86aa63b7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="78fa6a11-6f3b-4872-9456-7035874114d1">
+                <propertyInstance
+                  Id="002111f8-25a1-472d-bfe0-2f58d9c52cd0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="399d82ec-cf67-40ed-9ec3-73154645d689">
+                <propertyInstance
+                  Id="2e1336ad-d0cf-4a65-aae4-03240e2ca641"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="e1cd868b-5014-41d1-9d87-0ecbd78cb669"
+            isDerived="false"
+            sourceEndRoleName="Vehicle"
+            targetEndRoleName="AverageConsumption"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="222c72d4-a158-447e-b555-9eefee4cd369"
+              LastKnownName="Single"
+              LastKnownLocation="Package2_1343.uml" />
+            <description>Property AverageConsumption references type Single.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd4fbbe5-1f3a-433a-90b1-6b101383d43f"
+                  name="Vehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="76396973-458e-48a5-b419-d54a30e7b4b5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="379233d1-5649-4eb7-9983-3c44889704a6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a1ddb9e-82e5-4b44-9ae5-9e3dafb10efe"
+                  name="AverageConsumption"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bafaa6d7-d99b-4fbd-931f-04aad865018a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cef16262-1815-4472-949d-7901a5f9dd8e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8a7d82dd-5d89-4b96-b88d-50a4ce451a3d"
+            isDerived="false"
+            sourceEndRoleName="Vehicle"
+            targetEndRoleName="FuelPrice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+              LastKnownName="Double"
+              LastKnownLocation="Package2_1343.uml" />
+            <description>Property FuelPrice references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37bc20e3-afa1-48a7-b5b4-4f23e9cf7798"
+                  name="Vehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bbae070b-4830-4e4a-a0ea-d68ce3fb2047"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d7e55819-bcfb-4ccf-9260-a2d0563f7c23"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8aee03ed-92ff-4cca-87a6-0dd72533fee0"
+                  name="FuelPrice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1ca7a72e-6c20-4db0-8d91-3202e5d90380"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="87f69a44-422d-4053-b158-84b2d000ddfd"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c910099b-7195-47f1-924d-505fee63b5ca"
+            isDerived="false"
+            sourceEndRoleName="Vehicle"
+            targetEndRoleName="TollFeeCat"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="839d73cf-105d-4dd0-8e66-03725fca2c10"
+              LastKnownName="TollFeeCat"
+              LastKnownLocation="Package1_1343.uml" />
+            <description>Property TollFeeCat references type TollFeeCat.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a70df1dc-6ed1-4440-bdb9-2d15a66e2247"
+                  name="Vehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="829024e1-c0d9-43fe-81d1-263d07393bf2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="49088b6d-eceb-44e4-b758-05f89b26ebdd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="174a0f1b-b921-4fbb-b7a0-126212044f8a"
+                  name="TollFeeCat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="469e32e4-2dd7-42e8-bb8b-ad46ef82706c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c65bc305-8411-4db3-b069-119d785357ef"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b5dade46-ade6-46b0-ad59-22a059b32dff"
+            name="AverageConsumption"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="74c619ad-f370-4da2-b0b5-8e4cfa9f322d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DVehicle Member%3DAverageConsumption"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="16bdf3b8-81b8-4c15-8f31-79138e9ed385"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="275bb237-0541-45a9-aef0-bf2bd6900ac3">
+                    <propertyInstance
+                      Id="853e72d2-a383-4813-acc0-05d70f654564"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="725c5ce4-69a2-4101-9ff5-d783335ecc03">
+                    <propertyInstance
+                      Id="2edbb38e-2537-4279-bce2-27fb71b81ac8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d874eec-03a8-4ea3-9d1b-5a4570c0931a">
+                    <propertyInstance
+                      Id="8e3519be-1706-47b2-91c1-24527cf7fe99"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5433b791-87c0-4549-8cc1-1b12741c72dc">
+                    <propertyInstance
+                      Id="f1514bd0-8e43-4e01-8f89-9b9c048de52b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a87b1f22-4406-44b6-be36-756494d84f15">
+                    <propertyInstance
+                      Id="5de128cc-669f-4ce6-b909-69877e7cba3d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16f63d75-5c75-4214-9aca-23beeb12d423">
+                    <propertyInstance
+                      Id="5873d008-fef0-4164-bb2f-0676fb30c658"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b5f2d11-ea32-4f00-b412-1dddfa7db0be">
+                    <propertyInstance
+                      Id="ee0d466d-409e-42f2-8f69-07fe71b31702"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="222c72d4-a158-447e-b555-9eefee4cd369"
+                LastKnownName="Single"
+                LastKnownLocation="Package2_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dc341b16-2955-46af-afd8-8d054f51d1f1"
+            name="AverageSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0e33704f-e5eb-415e-a480-d7bbc94d4fc3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DVehicle Member%3DAverageSpeed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f3cd5f3a-5d4f-4c20-8b86-f49042861d7d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f78e92fd-8427-4f5d-a412-e46142584ab1">
+                    <propertyInstance
+                      Id="909a3f36-757d-4650-b9dd-31a5ad14816c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e43027a-28e5-47c8-87a3-d3a42ff46a0c">
+                    <propertyInstance
+                      Id="d621acaf-282d-44de-9e27-eee9b4af9f89"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d685d66-3f31-40c0-be9a-fb46a0c063ef">
+                    <propertyInstance
+                      Id="15c6cbe1-6d0c-4a67-9ed1-a116a3f4b0d4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25ccf0fe-92a1-46a4-bcc1-5efcd9143ac5">
+                    <propertyInstance
+                      Id="dcc42997-08b7-4e1a-acdf-e0c9b78a6f2f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4568cae7-4167-4151-bcfb-1f1040986f39">
+                    <propertyInstance
+                      Id="13a91522-67fd-4662-a70c-3e6396d3def7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="209f5fee-d9ba-4e2e-850b-058dbf98717a">
+                    <propertyInstance
+                      Id="acd51d78-d2f3-47dd-92b7-94fcc69017e0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="743e01ce-391b-4506-bcce-fb4196ceeafc">
+                    <propertyInstance
+                      Id="0b0b063e-ce25-46a0-8818-24a1f95ab3c6"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1887c29d-ada0-4a6e-957c-227c6a936834"
+            name="FuelPrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7c22a0ac-610c-4908-a864-3fae6c74995c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DVehicle Member%3DFuelPrice"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e213d7ce-44eb-43e1-83e9-578bbf6c50dc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce6c99db-08a9-4a21-a140-6f8bdab25bb4">
+                    <propertyInstance
+                      Id="7e6ecfd4-df65-4dfc-913c-f703cd4cc4f7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca4442e2-cecc-4dc2-840c-c12b26e73d9c">
+                    <propertyInstance
+                      Id="4cd38e07-9122-44c2-bad6-aa63f513a683"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="128c26e1-5713-401c-b820-7f63edef205a">
+                    <propertyInstance
+                      Id="9800a9ef-4d05-45e6-92f8-a0850e777623"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a7bf8de-c44e-4135-9623-818a58176b5a">
+                    <propertyInstance
+                      Id="aa4e64d3-94c9-4945-992a-134bf503f82d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0250844c-9944-4c80-b69b-ba343251ae8d">
+                    <propertyInstance
+                      Id="1d1f0a51-2277-42a9-9cbd-bf33bd413ac0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2465dc7-6094-44d2-834b-85d9e98aeb6a">
+                    <propertyInstance
+                      Id="f8ce4029-cc7e-4a70-9563-9f0ece31209e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23b54612-43ba-4e31-8b8b-a495b844a0aa">
+                    <propertyInstance
+                      Id="660e4c40-a584-4898-8dc7-073bbd9ba337"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b4d85138-e166-4799-875e-7f3c87704fe4"
+            name="TankCapacity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3021464f-eec2-41c4-ab6d-a55da3b5e1d3"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DVehicle Member%3DTankCapacity"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3051f2fc-8f79-415d-9f98-b7a509247cfc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dce044d5-d463-4a18-a0e2-c45fc8446667">
+                    <propertyInstance
+                      Id="c362896d-92b8-4c48-aff0-e9b1da25a328"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e286954b-bf29-445f-a907-59fa3f3894f4">
+                    <propertyInstance
+                      Id="dc503344-f4d0-4e49-b87a-68cc6f88e63f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85315d30-7aa8-43df-9f6e-36e1da2b079b">
+                    <propertyInstance
+                      Id="fdefe7ec-36ed-4f5f-8be9-381901efd537"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c40e6dc6-d0e7-435f-879b-cc4c93612036">
+                    <propertyInstance
+                      Id="b978800f-8591-49ed-ad98-486e6ed2e574"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f955b6f-a0be-493b-9cd5-e95ad7f9d7fd">
+                    <propertyInstance
+                      Id="d6247234-a31b-41a7-a6b4-e0f878e2d1b6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4b10be0-b448-4360-bac8-eb162a811a62">
+                    <propertyInstance
+                      Id="926ce0d2-dc6d-4eb0-9ff3-a6e413e158cd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd43040a-3c16-409f-8a99-30d4bb87bc0f">
+                    <propertyInstance
+                      Id="0adeaf2e-bc63-4bfb-aff6-4a1248c6ef73"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b21e12a2-12c3-4020-88e2-acd6574742d8"
+            name="TollFeeCat"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a43ec966-a291-4eda-ba00-7e705bab2e7e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DVehicle Member%3DTollFeeCat"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dfe25232-62db-4c51-b6b9-47b976926214"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="273983b1-1f6e-4a50-a776-14c5f5ed413a">
+                    <propertyInstance
+                      Id="a0e2d196-4850-43f9-a350-35193896d828"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9b4ddde-d1b2-4838-bae7-b831384e59cf">
+                    <propertyInstance
+                      Id="0aa7bb2f-fca5-49a1-80c3-62ff5fcf18ac"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05b3239c-9f7b-487e-be50-2158fee5a384">
+                    <propertyInstance
+                      Id="fb3dcfab-19a3-4a2b-bf5c-fe8ab8eb4f46"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2ae7122-6d3b-4c4d-bac6-750ba9194488">
+                    <propertyInstance
+                      Id="9fc7a0e0-a275-4378-8cdf-683516188319"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b72c0f3-abf8-4704-8575-339fe82af498">
+                    <propertyInstance
+                      Id="0dcbb51a-c740-46e0-9539-54d14f6478a7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="462e4d16-4fae-4d6d-8a08-48779c0b5c35">
+                    <propertyInstance
+                      Id="0baeecdf-1d11-477f-94e7-cd8611a84a1e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="688a9a58-96d5-470b-8c5a-f7bde000b6bd">
+                    <propertyInstance
+                      Id="64edf7c7-1c6a-412f-b7a1-daf2ec41cd25"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="839d73cf-105d-4dd0-8e66-03725fca2c10"
+                LastKnownName="TollFeeCat"
+                LastKnownLocation="Package1_1343.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f8900830-26da-47ad-8a65-29cafb3c97c5"
+            name="Vehicle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1d6eb012-abb2-4a54-ad92-071714dbfd06"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DVehicle Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b3c7e9b-4fb0-4476-95ac-9df7e183df9b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3e1d343-7191-4d7b-a5c3-9e679955aadc">
+                    <propertyInstance
+                      Id="70ec7ea6-9022-4558-8d1c-fdf1c5b77de7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="184c20dc-5470-48e4-b535-961dbee6a11d">
+                    <propertyInstance
+                      Id="6548fb17-1923-40b2-a912-f42fd8c15938"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="819f544f-7613-4bff-a9ae-028bba384ef0">
+                    <propertyInstance
+                      Id="c59d85b4-f84a-49a9-9e9a-f3f8635ff76f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="252aa2bb-3139-4928-8389-2ba7fabb52a7">
+                    <propertyInstance
+                      Id="ef0fe019-ab98-4ee4-aad2-c0e3014fe644"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3230ca9f-caa3-4354-b028-9257664ad8d4">
+                    <propertyInstance
+                      Id="e8d22fb1-e2ba-4717-bf9a-ae5c07728a2e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb7fe0a5-d833-403c-9079-8ff1d4fe2963">
+                    <propertyInstance
+                      Id="66a3a156-485f-424e-8026-1ed9771823f2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="839d73cf-105d-4dd0-8e66-03725fca2c10"
+        name="TollFeeCat"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a73bc339-2c2c-427c-b01c-59b759d0b5da"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DTollFeeCat"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fccb9a01-5c2b-4551-8399-e3a8438298f9"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b593ff12-dd86-4938-a9f6-a6331bb887fc">
+                <propertyInstance
+                  Id="f5a8e6cd-493a-4d31-86da-81d02e734077"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae21d5f2-a7f1-49ac-aff9-d6335cbd94b4">
+                <propertyInstance
+                  Id="6d65e20b-e0aa-4880-ab83-be06607978db"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ea1d5f9-9f22-425c-b07e-cad73d1709cc">
+                <propertyInstance
+                  Id="c6cd81cd-7df1-42ae-bd53-5134aaf61975"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4b40bebf-0c02-432a-be22-1f50b30cfd24"
+        name="RouteConfigOptions"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d67a0c48-9756-4a17-bb29-b94be42c7e57"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteConfigOptions"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="18380a4e-ec1b-4572-bf01-d4288a91130d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="303a875a-ba1b-453b-8bf6-b9a7b1da97b0">
+                <propertyInstance
+                  Id="cc0e8aff-c9c6-4508-88d6-c35b7cabf587"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b544890a-d429-4d35-8e3d-bc1ec9255164">
+                <propertyInstance
+                  Id="711c7bc5-c989-43a0-ac39-478a0c1ea6b3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9de71a63-2f7f-44e2-978c-434db040bc19">
+                <propertyInstance
+                  Id="e9ad8bb0-703a-4be4-95c7-bc8fb739d534"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4f075145-cd5d-46a9-bd47-7034a3792d48">
+                <propertyInstance
+                  Id="6728be36-6c41-4298-ba49-a499e0c41ec3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7eaadebf-24c2-4183-b40f-628c8fa4a83b">
+                <propertyInstance
+                  Id="8e39072e-9598-4bba-bd6a-384cb650f066"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="cdb15f1d-453d-4354-8dfb-0af161b517f8"
+            isDerived="false"
+            sourceEndRoleName="RouteConfigOptions"
+            targetEndRoleName="Vehicle"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6fb4f599-1864-47fc-b548-338ce83b173c"
+              LastKnownName="Vehicle"
+              LastKnownLocation="Package1_1343.uml" />
+            <description>Property Vehicle references type Vehicle.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="20ecd9a9-6ca1-46db-ad24-fe8aca771ecb"
+                  name="RouteConfigOptions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2190b956-99ef-4ce7-a7f6-f168f57b2413"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6e3d07ae-4759-42ea-936c-a03ac4589e95"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fdfad18c-819b-4421-8b2a-97a743c877ca"
+                  name="Vehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3ed2ea3c-bf19-4314-8331-dfb02e0cee20"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="625ad3b6-7cea-4e26-99e2-0c17ded4bad4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="40dae306-6682-4e66-93c1-13999dfbe5d1"
+            isDerived="false"
+            sourceEndRoleName="RouteConfigOptions"
+            targetEndRoleName="RouteType"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="98fcb1c4-bb8d-44f3-81c2-63f589e2ad51"
+              LastKnownName="RouteType"
+              LastKnownLocation="Package1_1343.uml" />
+            <description>Property RouteType references type RouteType.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ff4a07c-8e08-4dc5-a8c9-459c2bb6dc88"
+                  name="RouteConfigOptions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4b6ea5eb-cda3-4e1a-a57e-fc7bb2b89051"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="947a3fd0-68a4-448b-b0d7-2175ffc928f5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66ab3991-7257-4d7a-b306-5f51dbfa4685"
+                  name="RouteType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7e733451-3081-49a6-a723-ff0f35c9ddee"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e48d56b4-69fa-49e9-bf75-d14330f7733b"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a002a45d-8f13-4a2f-9828-e1896b576252"
+            name="Vehicle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e5caf8cb-e685-473f-9b36-c478eaae7bc7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteConfigOptions Member%3DVehicle"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="581ce11f-e7a2-40b3-9561-8c0b575e229f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7c3e3cd-6a8a-4c47-926a-d018f444d7c4">
+                    <propertyInstance
+                      Id="59cb62c1-cc17-4200-9f3a-6776cd8911fd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="facfcf69-724d-4b55-8165-6f965201b3f5">
+                    <propertyInstance
+                      Id="090e41c6-4f10-4c4b-874b-5dbb536e1775"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3be101ac-1377-4a42-af6d-173163e5ea84">
+                    <propertyInstance
+                      Id="766683d8-89e6-4e7b-945b-019f353ad1a2"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b682ddf-7af2-4633-a165-64597340e3e4">
+                    <propertyInstance
+                      Id="dbb7c075-9a87-42c2-97a5-13df2512af68"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88c24284-bc71-4655-a375-9deb9c76b28a">
+                    <propertyInstance
+                      Id="03a302f8-f36d-4931-849e-78d37f3cccbc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49996de5-a97c-4b5a-b31c-9f3129ee11dc">
+                    <propertyInstance
+                      Id="52cf71a2-887b-430f-94bb-bee10bbce640"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="505425ca-485d-46ec-b858-363f0700820b">
+                    <propertyInstance
+                      Id="01fd29d1-b69d-4306-aca0-3e0b5bd4851e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6fb4f599-1864-47fc-b548-338ce83b173c"
+                LastKnownName="Vehicle"
+                LastKnownLocation="Package1_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c671e394-cc49-4c8d-b7e2-d3c113c082fb"
+            name="RouteType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="651cfb63-6951-48dd-8176-79ae63a07208"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteConfigOptions Member%3DRouteType"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ddf5705b-c8e0-4236-8892-5c767a2d759a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6046de25-a975-47d1-806c-e9ebd28eb24a">
+                    <propertyInstance
+                      Id="e94b5a46-9d21-4ea8-8752-28be8bb7c8a3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6715564-48cd-45eb-a57d-a3e7dd2850a5">
+                    <propertyInstance
+                      Id="47b61e09-b0c3-42a1-84cb-7eeff94eb814"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc1f0e96-3765-4980-81c8-d41961d39297">
+                    <propertyInstance
+                      Id="b2b5b815-076f-4148-b115-6b4c7bb75c1b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="002f621e-33b9-4bdd-9fad-17e4f72fdddc">
+                    <propertyInstance
+                      Id="0d25fe07-bfd6-43b5-b6fe-a6812ee95964"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd9c5242-008f-48cb-9d70-50156494cae5">
+                    <propertyInstance
+                      Id="1c536cf1-561b-450b-8bc8-e11b4da9e537"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0956b3c4-6d36-42c3-922b-42d1c7a34aa0">
+                    <propertyInstance
+                      Id="d7a567e0-03a2-4120-9ffe-1e7545f0cbf4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2aac84d6-b400-4a2b-bd5a-9f5cda666169">
+                    <propertyInstance
+                      Id="4c724550-7cdc-4c3a-b090-128020d7a648"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="98fcb1c4-bb8d-44f3-81c2-63f589e2ad51"
+                LastKnownName="RouteType"
+                LastKnownLocation="Package1_1343.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f8677386-49b7-4353-b6d8-5cc77f48fbd6"
+            name="RouteConfigOptions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d657a442-80a4-4689-88ca-dae48e26e793"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteConfigOptions Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="68c9e1c5-e62b-4fae-9da1-5961e8f04797"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f411320-757d-48fb-b7b1-0e445c81c73e">
+                    <propertyInstance
+                      Id="40ac7cde-733c-407b-95df-963744b56c0a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb505b61-669b-4dc3-b013-63d6e359f358">
+                    <propertyInstance
+                      Id="e0408e9f-d51c-4367-a36e-3bd70dd7bbcb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f657a34-e8da-4c65-9f81-6c1359fba7cf">
+                    <propertyInstance
+                      Id="d01a10c7-ead4-4440-9547-c28ca66d8fdc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="005cfb9f-c00d-4a2b-9e14-b71cfb5acb97">
+                    <propertyInstance
+                      Id="860329f4-baec-4d05-9234-12c246a468fa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77615904-8055-46ea-9875-7d4ba5cb3675">
+                    <propertyInstance
+                      Id="2ab30d00-a15d-4fd5-895d-d6e44d6db200"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47b4b95a-6bf1-4806-a60a-83b4124ed129">
+                    <propertyInstance
+                      Id="d77d46ee-4a18-468e-afc2-dbca9346e2cb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="98fcb1c4-bb8d-44f3-81c2-63f589e2ad51"
+        name="RouteType"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="feac80ee-2829-4957-a137-0e2c769af0f2"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0b1bd456-a9ae-4123-903d-027c7ca20233"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab60f9c8-baaa-413d-8226-21d66a508842">
+                <propertyInstance
+                  Id="09c2d784-715e-4cff-9a68-44f94537aa97"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3fb03726-ac07-4e46-be04-7b1a3871100e">
+                <propertyInstance
+                  Id="27921bcb-cbac-4943-ae41-139732b29803"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="222dd1a3-b1c9-49ef-9f00-ab9bc1770a89">
+                <propertyInstance
+                  Id="2827be8c-8284-4e6e-b9b7-5df6a2cce76f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="4e6238f5-6661-4fe6-bbba-0b2f313f613b"
+            name="PadraoMaisRapida">
+            <referencesInternal>
+              <reference
+                Id="0cc4a959-d0c9-49ca-a2ec-ee0c881c7def"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DRouteType Member%3DPadraoMaisRapida"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="bdb111ed-a07e-4c66-b010-91c5959a5d3f"
+            name="Literal1" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="78a9af4d-2934-46a3-8be2-88131e2b9ea3"
+        name="Coordinates"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e9ee78e9-7132-4217-9f9e-c10ae87d7c2e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCoordinates"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7a4bd224-2231-4c57-8251-8fc4b440fd13"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e5a4e3e-4131-49bf-9279-04bde1f0c84b">
+                <propertyInstance
+                  Id="6d44c8ce-4abc-440b-9b71-023f2884cc70"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7bdc725b-d478-40bb-8281-cd64a3e845fd">
+                <propertyInstance
+                  Id="7e8d4022-ebeb-4691-9f84-6a571dda6af6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1df5720-a885-436d-9bb0-329411414275">
+                <propertyInstance
+                  Id="8d80cc67-dfdc-47be-8e51-560833a81d84"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="38e1b816-c951-4d39-af14-4e41d937f4c1">
+                <propertyInstance
+                  Id="c80a4eda-7839-4aa3-ad95-310ea01fdaa7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c996e92-d9bc-4459-90d8-a709d86c9b45">
+                <propertyInstance
+                  Id="f9a9476e-2aae-4222-883e-312ded4893d2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="fd4431d1-61ba-4447-b85d-5b6cdf8db132"
+            isDerived="false"
+            sourceEndRoleName="Coordinates"
+            targetEndRoleName="X"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+              LastKnownName="Double"
+              LastKnownLocation="Package2_1343.uml" />
+            <description>Property X references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9fa09d2-eb63-4df7-ad38-de5669b4048e"
+                  name="Coordinates"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e6ed4ebc-c155-4bf1-a565-e3d16becde3a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4e9b22b9-d8f6-4bcd-bd83-442411be7110"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2c408da-f4a5-465a-ad7d-bf90d97a72f4"
+                  name="X"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dc7b0380-7321-421e-983c-3c1147c2e564"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c75e668b-9a3f-49c5-a8b4-d6f2e2351557"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0ead0cbe-ccb1-4f86-af77-d2e713175d9f"
+            isDerived="false"
+            sourceEndRoleName="Coordinates"
+            targetEndRoleName="Y"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+              LastKnownName="Double"
+              LastKnownLocation="Package2_1343.uml" />
+            <description>Property Y references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f170ca3d-6f43-4422-8c2d-d9dc8fc2e0db"
+                  name="Coordinates"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e32107a3-8564-40d2-aae9-47d72f0abafe"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1ee36884-3294-4624-806f-8f8b6685352a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd7490ff-cda0-4e1a-b5f0-0ff1c46a5e1d"
+                  name="Y"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="db5c04ea-0005-4879-9b2b-3f36d9299243"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ef31059c-4d18-4697-8522-e39cd9c9a461"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c98c5c69-5db3-418c-8625-9d461f771008"
+            name="X"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0b53a9f5-6120-47c6-830b-50e15ccff84f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCoordinates Member%3DX"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="914e0d0a-2d71-4fa3-8a5e-31440ab1b60a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6056ee5a-d5fb-41be-b4ca-e7758ab2978a">
+                    <propertyInstance
+                      Id="6aae9e02-2af9-4456-ba00-a0bc452af075"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f54c997-3eb5-44ed-b7fc-4386ce4ba4a3">
+                    <propertyInstance
+                      Id="c8e2e4d4-de9f-49f0-b289-f61288e8bbf7"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a16224a-50d9-4d92-91de-e355d652deba">
+                    <propertyInstance
+                      Id="048aa68d-8964-4519-9a08-293dffd9199d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10b5449f-dc2e-447c-9b49-e4b2ecd0323b">
+                    <propertyInstance
+                      Id="d430731c-f2d3-4745-828a-4d941a3c67d0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e3dcd4e-8c46-470e-804d-432c4517897d">
+                    <propertyInstance
+                      Id="01957a19-f806-4299-8c37-3f5baa770268"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfebfb70-e82c-4b82-a70a-2ad3141afee1">
+                    <propertyInstance
+                      Id="dcf19229-6299-4003-ac5b-4a7e7ef5fee9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2686a09a-9be6-4388-85a0-7cdb2ed6bfb3">
+                    <propertyInstance
+                      Id="55007bac-88e5-4d16-86eb-2929fb9c3f2e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3cb1c9bd-2bbf-4aea-b599-d28660abaff6"
+            name="Y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ae3a2a27-a0a2-4e7c-af15-8432e14eae99"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCoordinates Member%3DY"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f65df5ce-5b87-4506-8abf-428b2853b4e8"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0952a165-7886-4562-85f8-7eb4a4a8c819">
+                    <propertyInstance
+                      Id="4c9ca033-6db1-49d9-9ad9-acabad2a9915"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc7d2d18-e539-41d8-93be-7880860b5266">
+                    <propertyInstance
+                      Id="6875c45e-5e82-4b56-9962-b03cec3119a5"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52287f78-00c7-48db-977e-b6b578162b12">
+                    <propertyInstance
+                      Id="f7ee4b24-431f-442c-928e-7ab090a10bf8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84eddd06-a7ae-4c43-8dee-6456be9f03f6">
+                    <propertyInstance
+                      Id="0ae6037d-ccf0-4efb-a0b1-ed53db79df0f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a066281c-953a-491d-b745-cb90f656dce5">
+                    <propertyInstance
+                      Id="d93c1070-a044-4b1e-8b45-c111a7981985"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="137eea21-0696-41b6-a1f1-65c2a2ba00a2">
+                    <propertyInstance
+                      Id="3776904f-8c4e-4af4-9da5-289a9773c8fb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a46963d-5551-4486-9c08-92b922dba408">
+                    <propertyInstance
+                      Id="3ec38471-9f28-4349-a90b-b83a7cf25894"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="dde8af79-4a07-4a67-b1d9-bff33883c237"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1343.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="776aadd3-247c-4c1d-b2fa-7c1c10caf877"
+            name="Coordinates"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="89b03817-8e0f-4cff-9769-ac027310e519"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCoordinates Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3e48cbbe-d569-47cd-b2a7-d35ea971cd17"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8755afad-3f2b-4ba0-857b-c11a86c73921">
+                    <propertyInstance
+                      Id="f8b06bd9-c10a-4da9-ad22-6116dee580f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5662bb60-009e-4742-89fa-400838d8b123">
+                    <propertyInstance
+                      Id="c582c837-8d00-4a13-82ec-c62a9e8defc4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35c1f389-dc17-4421-aef9-81fa2526c075">
+                    <propertyInstance
+                      Id="d977084d-f2bf-4614-befa-103f7a69be80"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94a57ae5-11dd-49cb-a665-32ce6a1f3e20">
+                    <propertyInstance
+                      Id="c78a1712-0e3a-495a-88f8-fbe4f34cef96"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dd379e9-3ee5-4d9d-82e8-1ab85733133d">
+                    <propertyInstance
+                      Id="33ab0a18-3b13-40b1-9555-2a7fd54dc7ee"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4aebf3a8-0a6f-4187-9c85-e2be2fb11075">
+                    <propertyInstance
+                      Id="cb3cb682-9536-4a26-9566-35f7421a9210"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87f14184-6545-4e72-a35d-c3c5d0d9adc6"
+        name="City"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="38a5ab17-c319-4f6e-bf3e-6150850bae92"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCity"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bbabf12b-2e8f-4b63-8f31-a8b7e4b6df53"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b4727b3f-2289-421c-a3ca-3c61ab8e2397">
+                <propertyInstance
+                  Id="a9fac7a8-9016-48c2-a70b-8a561464848f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="efbcd6c6-ac51-463b-a531-fb35fe1537c1">
+                <propertyInstance
+                  Id="d3139fac-6960-49f0-9cc8-0047ea514067"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="37450b65-d6c6-4bd2-9d29-6e57f64272fa">
+                <propertyInstance
+                  Id="1efac9fd-6908-4c85-9ba9-a44c3db773ce"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="235560c3-de66-48cf-aa45-e3f2bb3d5a64">
+                <propertyInstance
+                  Id="b1069464-7a5c-4b64-a731-46139e2f3fbe"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d040f4e3-3f88-4061-a7c4-3bc8f7ef23ba">
+                <propertyInstance
+                  Id="d9a2f9f5-54de-4a0c-832a-a4382f4615f7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8252abcf-2e72-48e4-984e-2b7d4e5c67ec"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3b6dde22-638a-486f-8985-8ea0a7f5bc13"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCity Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="adeeb1b4-1712-42f9-9b40-dbb8a6a3e843"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40a4c6be-eb4c-4330-a9aa-9b6cf510c06d">
+                    <propertyInstance
+                      Id="7b4b6049-07be-4048-b52d-5afd08902807"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e018d0e1-a887-417c-aec3-c703ecbb8b3c">
+                    <propertyInstance
+                      Id="cfa1e628-1886-4145-a101-e458b7c74765"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38428bc3-7545-4a96-b18c-deabd98265f7">
+                    <propertyInstance
+                      Id="7dc3716d-30ae-49ad-b67e-88868d562f39"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b054d06-228b-43ff-afd4-bb7d7238aa8f">
+                    <propertyInstance
+                      Id="1b415ef6-d789-45b6-b959-9d965972aaa2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7688678-dff2-43e0-97b6-473f8527e3fe">
+                    <propertyInstance
+                      Id="102d88e6-7bd6-40b4-9e4f-30dc5271be41"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8d5f1dd-04d2-4dc0-ba0d-11bd2294f9c9">
+                    <propertyInstance
+                      Id="562ed08d-bdb3-4cdf-aec7-cadb76964bb3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8805993b-76a0-4e50-a207-b3dbba4ae541">
+                    <propertyInstance
+                      Id="fa864c35-ae57-470b-a16c-d532ecc3779e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="14449848-d368-434b-ba97-fd01af2dbb54"
+            name="State"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="80b796bb-7cbf-4e0b-9c7a-f1c57f20d7d5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCity Member%3DState"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94c99402-f006-42de-bca0-a1b7f87179b2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="923d3ead-cdf9-490f-9800-fe2e94a017e5">
+                    <propertyInstance
+                      Id="386bd2f2-9ac0-4d33-924c-ce54d9ef73a4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85156e54-ec32-4413-b69d-82f75b75acbe">
+                    <propertyInstance
+                      Id="250eb198-4803-4dd0-b5e1-9ed46a4f3725"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff300d1f-9cfe-4eab-af5a-b9adf53b53cf">
+                    <propertyInstance
+                      Id="f5245d20-2c18-4c1f-aedf-fd741ae3d008"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56e7f49d-96b9-412b-9788-d9016537739c">
+                    <propertyInstance
+                      Id="9965e491-b60a-4144-bf53-d075cb9d0250"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70be4c3e-969c-48ff-a1e9-253b9928a47e">
+                    <propertyInstance
+                      Id="3ed37e05-7e83-421a-99c1-3150e9f59892"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a6be99b-0baa-44c4-8b34-be7a3238d5c8">
+                    <propertyInstance
+                      Id="b6dd25ae-f77f-40ad-9a45-9b73cdc47b4a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="559b5e85-bc72-425e-8f7c-b7fc608b09fc">
+                    <propertyInstance
+                      Id="5335e20f-cf31-411e-894c-e818e3bdc942"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d0745a61-3125-495e-985b-02a5c34206a6"
+            name="City"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9d767649-ec9a-44fb-acef-03ac792a192e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DCity Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="32c140ab-6500-4b5f-bc5d-a1fa3f4c2769"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1189172-6a12-48da-9cf5-7c85c6e55b10">
+                    <propertyInstance
+                      Id="94faea35-c976-4abb-b6d5-65a6a94edca4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f72fc015-4e38-4132-bd22-98a7abc8a095">
+                    <propertyInstance
+                      Id="1b8df1ed-0538-4226-bf44-1a8ef92b05f0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="badb66a1-d508-48cc-9fd1-7667b2d644cb">
+                    <propertyInstance
+                      Id="c27ad6ee-5d8a-4748-80c1-e7461f2adca3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2eac1705-348a-4049-b6f0-9deea9d8e8c6">
+                    <propertyInstance
+                      Id="6f578949-8b78-486e-9be9-d88d8cefaa87"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6403a531-c3e9-471a-9fd1-8d52188db9e0">
+                    <propertyInstance
+                      Id="52cb8ba5-b347-424e-ae74-5ec5cd5db22c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9c21254-7525-47f3-a712-9cd17d49ab48">
+                    <propertyInstance
+                      Id="51a3b9f2-95c4-46b1-a1e8-4b78dc711747"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="679422aa-4e85-4c69-9f2c-64934d179a55"
+        name="Address"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="36cd0fd2-a3f0-45a8-a518-f54540f1a051"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DAddress"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="81b6c082-fade-4cea-8ee6-d646b73c2c6a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8fa06c2c-06a2-41a6-bbcc-d5c7ba556479">
+                <propertyInstance
+                  Id="218239e2-5828-426d-9c87-71d2d01dad3b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91796ced-5797-4014-8099-64fe4a8eda11">
+                <propertyInstance
+                  Id="2c6f5441-374a-440e-afa7-68b8bab6aaf2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a18f10b-330f-4022-96c2-2556d0f65d13">
+                <propertyInstance
+                  Id="fb41046e-a207-4af2-92a5-57d376ce23c0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="97189a56-bd98-4024-a907-3ab642d06ed3">
+                <propertyInstance
+                  Id="685b8cd7-e497-4e7a-af6e-a1280491829f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe8aa456-b4fb-4d81-9188-569513ac0984">
+                <propertyInstance
+                  Id="30ef8a61-96e4-4ee9-a7af-bc7fee32228b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="0f6183c6-37d9-4dc3-9be0-fc856cfa0784"
+            isDerived="false"
+            sourceEndRoleName="Address"
+            targetEndRoleName="Coordenadas"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="78a9af4d-2934-46a3-8be2-88131e2b9ea3"
+              LastKnownName="Coordinates"
+              LastKnownLocation="Package1_1343.uml" />
+            <description>Property Coordenadas references type Coordinates.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="753e435e-b2ea-4011-98a9-43106ce00d3a"
+                  name="Address"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c3cccda0-583f-4061-b5c3-4846a05e77f0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="eb49916a-d5e4-41bc-9d1b-27a8dce2ae79"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f85bbdba-0f42-4459-a572-1d69c19072c7"
+                  name="Coordenadas"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="90833717-e55a-436a-b005-2255fda2edc7"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3ff60af7-1ab9-40e5-a9de-01444cb206f4"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b628a181-abfb-4125-b014-d3510cb5fc53"
+            isDerived="false"
+            sourceEndRoleName="Address"
+            targetEndRoleName="City"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="87f14184-6545-4e72-a35d-c3c5d0d9adc6"
+              LastKnownName="City"
+              LastKnownLocation="Package1_1343.uml" />
+            <description>Property City references type City.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="866273bd-0ac4-4242-923c-6384146ecd27"
+                  name="Address"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="16104848-c9c8-422d-8c9b-864afee37879"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="21f59a0b-2244-4e9a-b61d-629480d85131"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6562a723-d33b-494a-9c49-68709f3ee3e7"
+                  name="City"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d67edc54-1022-450e-bd44-c40167a8ae3a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0dc3f885-b79d-440d-9801-5422958734d7"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="91a19e92-fea0-4b86-888a-a555489d0f0b"
+            name="Street"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f5cc740a-36bf-4121-904c-1e90dddae239"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DAddress Member%3DStreet"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3704dbbe-b369-4b8e-90e5-ecccd44517d9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c977d409-21f7-4314-97e1-0b945ca01d73">
+                    <propertyInstance
+                      Id="f77659f5-d134-457f-bacc-a35fd1cd3d4a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc5e119e-1a07-45d1-9f14-2c1d8d3083f2">
+                    <propertyInstance
+                      Id="7209847d-224d-41af-ad97-a8bb2d072d69"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aefa4a57-b7c3-4feb-949b-39399df688a8">
+                    <propertyInstance
+                      Id="915ad301-78e4-4469-b11f-4d6afc7c8522"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="208b12fb-976f-40f5-a5c0-ce3aca7c75ea">
+                    <propertyInstance
+                      Id="b678c965-2873-448f-a6db-4eba8107fb74"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b24a416c-beda-475e-9c86-c274aa8a64eb">
+                    <propertyInstance
+                      Id="fa107fa2-afa5-48ac-9f50-c2849b3850de"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="314f5a5a-aa99-46e8-bde8-398bffd59b03">
+                    <propertyInstance
+                      Id="7a82cdbb-abf9-4510-94bd-87e83d3378b1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f019062c-0eda-4b6f-a061-86b4e81e1e17">
+                    <propertyInstance
+                      Id="6cd9ca8a-b24e-4a5f-a933-ee8861436673"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c216b3b1-7247-48e5-a1c1-e2e1d0b5a720"
+            name="Numero"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="26619f2a-c027-4c3c-8fb0-d63bb616621a"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DAddress Member%3DNumero"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b4f23b2-7ced-41a9-949b-dfeaf84ef38e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4ad85b4-7fa1-41c8-b934-542210313b6d">
+                    <propertyInstance
+                      Id="753d030a-0187-4c72-bbbb-eaf65eecc358"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c948084f-1ea0-45f0-93ba-3a8d0978a48c">
+                    <propertyInstance
+                      Id="74ac050e-0a18-4748-9657-bf4295c207e3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2184edee-6aac-49df-a16c-d4d4042199c4">
+                    <propertyInstance
+                      Id="6b2524c7-a044-4c83-9609-53e264dff8e5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0714fb9b-1cfd-4753-8688-7def9ebd7adf">
+                    <propertyInstance
+                      Id="595679b6-27d9-4f74-a3fc-2bbb24387055"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3da8382-e9c8-4571-8aa9-42e56103b747">
+                    <propertyInstance
+                      Id="5b206290-0547-4ce5-94b1-a7f6670f0c67"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e05dada7-a93a-471a-8736-e2ca51a00374">
+                    <propertyInstance
+                      Id="4403f8e3-e5c0-4850-8894-84e5265e2976"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65899cd3-4ca0-4532-95d4-3edad9aabd63">
+                    <propertyInstance
+                      Id="c6c35f0d-31e1-4186-9e9b-b36df3c9494b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingMapLink.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="40117a02-f62d-4d5f-a4cd-50ff4cb025d1"
+            name="Coordenadas"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a4c75b25-20ef-4436-96b1-30752ee78203"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DAddress Member%3DCoordenadas"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="68cc1fe7-2d6f-4e9a-9775-c7fb9de33136"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c5dd37d-2be6-4bf6-b9d6-60645c171ca5">
+                    <propertyInstance
+                      Id="2422d926-bba0-4854-9115-60baaf4bfa3b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe00af27-11ee-4965-a301-7a0799076e5b">
+                    <propertyInstance
+                      Id="ec6fdeab-4b1a-4e05-8e4b-1bfefbb9c048"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2f54b44-3ebc-4018-974d-4fabc3c79209">
+                    <propertyInstance
+                      Id="da6db84a-0b99-4af4-8258-ff4d0ddf0f6c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31d5e08c-f6cd-4c74-9525-b036f683b1fe">
+                    <propertyInstance
+                      Id="daddbb1a-2668-4a47-8055-668c13ac6c90"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c46bd945-467d-4195-b73a-5b978ed094ac">
+                    <propertyInstance
+                      Id="5d6cb519-1e8a-4e2d-bb7f-5d6694586ebc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cb1a3dc-ab51-440d-a025-ba88f8626ee6">
+                    <propertyInstance
+                      Id="fd9d148a-e3a0-46af-849c-fcd2211a92ec"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae1d2bef-e4b2-426b-bffa-1035726850f6">
+                    <propertyInstance
+                      Id="9832227c-003d-4fd6-92ee-e4dd03498f7f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="78a9af4d-2934-46a3-8be2-88131e2b9ea3"
+                LastKnownName="Coordinates"
+                LastKnownLocation="Package1_1343.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e7e820ba-15ba-49ff-a3bb-285b31435ccd"
+            name="City"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="878df903-5bfd-49d5-ad8f-9035ad174669"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DAddress Member%3DCity"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="566811c7-90e0-40ab-a91d-662690fa9e3c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="007203e2-8d17-4135-a8b8-3ed594cb9587">
+                    <propertyInstance
+                      Id="d67196f1-4aea-4a11-9943-46aeb1cc4c6c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fadd2b0a-e3ef-4d44-927a-abd4049d17e1">
+                    <propertyInstance
+                      Id="38800b35-048b-4c4a-8073-cd48b8d5984c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12c4080a-e529-4d89-a324-0c807310e7ff">
+                    <propertyInstance
+                      Id="f73df509-02f5-4502-b2f5-b3c41cda628c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed6e5403-9d23-489b-9142-c8ff36a88acd">
+                    <propertyInstance
+                      Id="a2c3cf2b-09f0-4c69-bab6-d748fdb59314"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9c7af85-8567-4f24-94c3-df258e895729">
+                    <propertyInstance
+                      Id="250236f2-6d69-4ace-9c98-1e6813e96017"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee982080-cb30-499a-b206-31841de0b83e">
+                    <propertyInstance
+                      Id="f3d066cd-524a-4c7c-a654-947bc099dd93"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3dc59f2-b732-419a-ad4c-4161d609d2ee">
+                    <propertyInstance
+                      Id="45135cd8-95da-4410-9bd6-213e81bad25e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="87f14184-6545-4e72-a35d-c3c5d0d9adc6"
+                LastKnownName="City"
+                LastKnownLocation="Package1_1343.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="dfbaf6bd-d7e8-4c7c-b416-dab6d0302efa"
+            name="Address"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9f7e5d31-ff1b-4d61-84b8-d95cca5f89bb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DAddress Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7823cb6c-fd34-464f-b736-8e9f8403d485"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="192cf1f6-e3a6-439c-83d2-16a828cb7e1c">
+                    <propertyInstance
+                      Id="850a4bc0-db64-4776-bed2-6c2c1a80409c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83ec0c05-3f00-457d-8d3e-be2d0f954865">
+                    <propertyInstance
+                      Id="f8058156-baf0-468c-9455-e12294ae66c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c05c27c3-7892-459d-9d81-32b18bd55730">
+                    <propertyInstance
+                      Id="8f93a97e-7823-4b92-99ae-b676cbd0b113"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a795336-2ec9-4f51-aeff-728ab276b38a">
+                    <propertyInstance
+                      Id="c1baa182-b780-4cfe-9cb1-3f259b00a662"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6333257-10fe-468c-82c9-69cceea373f9">
+                    <propertyInstance
+                      Id="100a18be-9919-410d-add9-1bfcf24bb403"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbeb30ef-f776-41c2-a9f8-c3c813322e6a">
+                    <propertyInstance
+                      Id="b7c426ee-d57a-4710-a9c1-249ea031266c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f9f895b5-3a9f-4585-8c7d-aad62c6a8adf"
+            name="isValidAddress"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e95b90d9-c62e-4654-bf01-7046ae426c93"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FG:%2FProgramacao%2FProjetos%2FMapLinkApi%2FMapLinkApi.Model%2Fbin%2FDebug%2FMapLinkApi.Model.dll Namespace%3DMapLinkApi.Model Type%3DAddress Member%3DisValidAddress"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3b7eddcd-2777-4f12-ace2-cd31f2b39efe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba308576-f29b-443a-bec4-e9c1604a4d43">
+                    <propertyInstance
+                      Id="2c91bc7f-2e20-42ad-930b-ee16930a8e9b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df6e6f0b-68f4-4d2a-b745-a017e2171b59">
+                    <propertyInstance
+                      Id="5deb74c2-76a4-432e-86c4-f933a96ffc0b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0051d20-944a-41c4-9ed8-861710eecbbd">
+                    <propertyInstance
+                      Id="08abaed9-cb7a-4d45-b684-b63fe0d4cde2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9c57baf-0d69-4495-b0af-e0ac23da6655">
+                    <propertyInstance
+                      Id="b565830c-a4a2-4de4-b110-5b480afd824b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59e803f6-9da6-4d77-a7ec-f487bb322614">
+                    <propertyInstance
+                      Id="61f136d9-b9cf-4252-9f97-348b9410d6a0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bc88d1b-f34f-401d-8f3c-5d408e95a3c4">
+                    <propertyInstance
+                      Id="d710ee85-b8a3-477b-b711-b73067d52837"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="880b7f6f-3380-4d15-a0db-d9049c10c5de"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingMapLink.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

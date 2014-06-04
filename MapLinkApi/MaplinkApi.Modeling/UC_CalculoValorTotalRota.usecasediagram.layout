@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UC_CalculoValorTotalRota">
+  <useCaseModelRootMoniker Id="e30d4905-a20b-4240-99d3-4e0bfb3a1abb" />
+  <nestedChildShapes>
+    <actorShape Id="5f2877f1-67b1-44ab-b729-8945d2ed0736" absoluteBounds="1.5, 1.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="c8b9d613-eed0-4eec-8653-3941d9aeb751" LastKnownName="System xpto" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="e326bced-27a5-4876-af57-a4a5c03c894d" absoluteBounds="3.625, 0.75, 1.875, 1" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="549dfe12-4c9a-4ffc-a094-1b6c68c3cd37" LastKnownName="Calcular valor total da rota por endereco" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 1.93333333333333); (3.72397450843758 : 1.47360679774998)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b903df0c-4ad2-4700-9104-f8bbb050a3a9" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="5f2877f1-67b1-44ab-b729-8945d2ed0736" />
+        <useCaseShapeMoniker Id="e326bced-27a5-4876-af57-a4a5c03c894d" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

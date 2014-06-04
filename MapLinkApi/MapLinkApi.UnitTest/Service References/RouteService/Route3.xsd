@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://MapLinkApi.Service" elementFormDefault="qualified" targetNamespace="http://MapLinkApi.Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8706/Route.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MapLinkApi.Model" />
+  <xs:element name="GetRouteTotalByAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MapLinkApi.Model" minOccurs="0" name="addresses" nillable="true" type="q1:ArrayOfAddress" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MapLinkApi.Model" minOccurs="0" name="routeType" type="q2:RouteType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRouteTotalByAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/MapLinkApi.Model" minOccurs="0" name="GetRouteTotalByAddressResult" nillable="true" type="q3:RouteTotal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

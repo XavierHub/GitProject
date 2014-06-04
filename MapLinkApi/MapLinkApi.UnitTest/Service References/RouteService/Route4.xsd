@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MapLinkApi.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MapLinkApi.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8706/Route.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Address" nillable="true" type="tns:Address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAddress" nillable="true" type="tns:ArrayOfAddress" />
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element name="City" nillable="true" type="tns:City" />
+      <xs:element name="Number" nillable="true" type="xs:int" />
+      <xs:element name="Street" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="City">
+    <xs:sequence>
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="City" nillable="true" type="tns:City" />
+  <xs:simpleType name="RouteType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DefaultAndFaster">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AvoidingTraffic">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">23</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RouteType" nillable="true" type="tns:RouteType" />
+  <xs:complexType name="RouteTotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Distance" type="xs:double" />
+      <xs:element minOccurs="0" name="FuelCost" type="xs:double" />
+      <xs:element minOccurs="0" name="Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalCostWithToll" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RouteTotal" nillable="true" type="tns:RouteTotal" />
+</xs:schema>

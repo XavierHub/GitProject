@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapLinkApi.Model", "MapLinkApi.Model\MapLinkApi.Model.csproj", "{09EF3105-C8CE-41C9-8118-8AE8CD8C5319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapLinkApi.Repository", "MapLinkApi.Repository\MapLinkApi.Repository.csproj", "{6B80C300-3DFD-400E-BA66-E793AB3AD6E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{09EF3105-C8CE-41C9-8118-8AE8CD8C5319} = {09EF3105-C8CE-41C9-8118-8AE8CD8C5319}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapLinkApi.Service", "MapLinkApi.Service\MapLinkApi.Service.csproj", "{4D1A4C29-A9BB-4E37-B1D2-90FFF667234B}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Modeling", "MaplinkApi.Modeling\Modeling.modelproj", "{1BC4BC59-C8B0-41D3-B910-1FF06BD963BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MapLinkApi.Test", "MapLinkApi.Test", "{5DA87615-A130-4CE8-B669-A4EB99D6457B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapLinkApi.UnitTest", "MapLinkApi.UnitTest\MapLinkApi.UnitTest.csproj", "{A820C005-DC3A-4F2B-B726-07D528FB52BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CEC23AA9-45A3-4FB5-B2F0-F650148D0CE1} = {CEC23AA9-45A3-4FB5-B2F0-F650148D0CE1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaplinkApi.WcfHost", "MaplinkApi.WcfHost\MaplinkApi.WcfHost.csproj", "{CEC23AA9-45A3-4FB5-B2F0-F650148D0CE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MapLinkApi.Modeling", "MapLinkApi.Modeling", "{767A193E-EC59-475A-B20D-878D1F039583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapLinkApi.Dependency", "MapLinkApi.Dependency\MapLinkApi.Dependency.csproj", "{E6E16766-BAAF-44A2-A1B5-35F8155CD253}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09EF3105-C8CE-41C9-8118-8AE8CD8C5319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EF3105-C8CE-41C9-8118-8AE8CD8C5319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EF3105-C8CE-41C9-8118-8AE8CD8C5319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EF3105-C8CE-41C9-8118-8AE8CD8C5319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B80C300-3DFD-400E-BA66-E793AB3AD6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B80C300-3DFD-400E-BA66-E793AB3AD6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B80C300-3DFD-400E-BA66-E793AB3AD6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B80C300-3DFD-400E-BA66-E793AB3AD6E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1A4C29-A9BB-4E37-B1D2-90FFF667234B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1A4C29-A9BB-4E37-B1D2-90FFF667234B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1A4C29-A9BB-4E37-B1D2-90FFF667234B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1A4C29-A9BB-4E37-B1D2-90FFF667234B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC4BC59-C8B0-41D3-B910-1FF06BD963BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC4BC59-C8B0-41D3-B910-1FF06BD963BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC4BC59-C8B0-41D3-B910-1FF06BD963BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC4BC59-C8B0-41D3-B910-1FF06BD963BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A820C005-DC3A-4F2B-B726-07D528FB52BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A820C005-DC3A-4F2B-B726-07D528FB52BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A820C005-DC3A-4F2B-B726-07D528FB52BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A820C005-DC3A-4F2B-B726-07D528FB52BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC23AA9-45A3-4FB5-B2F0-F650148D0CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC23AA9-45A3-4FB5-B2F0-F650148D0CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC23AA9-45A3-4FB5-B2F0-F650148D0CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC23AA9-45A3-4FB5-B2F0-F650148D0CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E16766-BAAF-44A2-A1B5-35F8155CD253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E16766-BAAF-44A2-A1B5-35F8155CD253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E16766-BAAF-44A2-A1B5-35F8155CD253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E16766-BAAF-44A2-A1B5-35F8155CD253}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BC4BC59-C8B0-41D3-B910-1FF06BD963BC} = {767A193E-EC59-475A-B20D-878D1F039583}
+		{A820C005-DC3A-4F2B-B726-07D528FB52BC} = {5DA87615-A130-4CE8-B669-A4EB99D6457B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\EntLibContrib.Validation.5.0.505.0\lib\NET35
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Validation.Integration.WCF.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
